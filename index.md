@@ -1,7 +1,6 @@
 ## Welcome to Qijia's homepage
 
 Hi, I'm an undergraduate in [School of Biomedical Engineering](http://bme.sjtu.edu.cn/En) 
-
 in [Shanghai Jiao Tong University](http://en.sjtu.edu.cn/)
 
 ## Research
@@ -48,24 +47,6 @@ in [Shanghai Jiao Tong University](http://en.sjtu.edu.cn/)
 
 ## Publications
 
-[1] Ming Zhou, Lichi Zhang, Xiaping Du, Xi Ouyang, Xin Zhang, Qijia Shen, Qian Wang. Hierarchical and Robust Pathology Image Reading for High-Throughput Cervical Abnormality Screening. _MICCAI 2020_
+[1] Ming Zhou, Lichi Zhang, Xiaping Du, Xi Ouyang, Xin Zhang, **Qijia Shen**, Qian Wang. Hierarchical and Robust Pathology Image Reading for High-Throughput Cervical Abnormality Screening. _MICCAI 2020_
 
-[2] Ming Zhou, Xiaping Du, Xi Ouyang, Xin Zhang, Qijia Shen, Xiangshan Fan, Qian Wang. Hierarchical and Robust Pathology Screening for Cervical Abnormality. _Computerized Medical Imaging and Graphics_ (Under Review)
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
+[2] Ming Zhou, Xiaping Du, Xi Ouyang, Xin Zhang, **Qijia Shen**, Xiangshan Fan, Qian Wang. Hierarchical and Robust Pathology Screening for Cervical Abnormality. _Computerized Medical Imaging and Graphics_ (Under Review)
