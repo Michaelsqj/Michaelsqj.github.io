@@ -1,6 +1,8 @@
 ## Welcome to Qijia's homepage
 
-Hi, I'm an undergraduate in [School of Biomedical Engineering](http://bme.sjtu.edu.cn/En) in [Shanghai Jiao Tong University](http://en.sjtu.edu.cn/)
+Hi, I'm an undergraduate in [School of Biomedical Engineering](http://bme.sjtu.edu.cn/En) 
+
+in [Shanghai Jiao Tong University](http://en.sjtu.edu.cn/)
 
 ## Research
 
