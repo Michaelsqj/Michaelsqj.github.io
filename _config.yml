@@ -1,1 +1,6 @@
 theme: jekyll-theme-minimal
+logo: /img/profile.jpg
+description: I'm currently an undergraduate in SJTU
+show_downloads: true
+google_analytics:
+title: Qijia Shen
