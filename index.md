@@ -12,9 +12,9 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
       <img src="/img/mitoem.png" width="100%">
     </td>
     <td width="75%">
-      <h1>3D connectomics segmentation</h1>
+      <h3>3D Connectomics Segmentation</h3>
       <p><b>Project Description</b></p>
-      <p><b>[Github Repo](https://github.com/Michaelsqj/pytorch_connectomics)</b></p>
+      <p><b><a href="https://github.com/Michaelsqj/pytorch_connectomics">Github Repo</a></b></p>
     </td>
   </tr>
 </table>
@@ -25,9 +25,9 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
       <img src="/img/monusac.png" width="100%">
     </td>
     <td width="75%">
-      <h1>Multi-organ Nuclei Segmentation & Classification</h1>
+      <h3>Multi-organ Nuclei Segmentation & Classification</h3>
       <p><b>Project Description</b></p>
-      <p><b>[Github Repo](https://github.com/Michaelsqj/Cell-Instance-Segmentation)</b></p>
+      <p><b><a href="https://github.com/Michaelsqj/Cell-Instance-Segmentation">Github Repo</a></b></p>
     </td>
   </tr>
 </table>
@@ -38,9 +38,9 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
       <img src="/img/nosecancer.png" width="100%">
     </td>
     <td width="75%">
-      <h1>Carcinoma Pharyngeal Detection in Endoscope</h1>
+      <h3>Carcinoma Pharyngeal Localization in Endoscope</h3>
       <p><b>Project Description</b></p>
-      <p><b>[Github Repo](https://github.com/Michaelsqj/Nasopharyngeal_carcinoma)</b></p>
+      <p><b><a href="https://github.com/Michaelsqj/Nasopharyngeal_carcinoma">Github Repo</a></b></p>
     </td>
   </tr>
 </table>
