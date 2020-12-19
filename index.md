@@ -11,7 +11,7 @@ in [Shanghai Jiao Tong University](http://en.sjtu.edu.cn/)
       <img src="/img/x-separation.png" width="100%">
     </td>
     <td width="75%">
-      <h3> &chi-Separation</h3>
+      <h3> &#967;-Separation</h3>
       <p><b> In addition to the voxel-summation of susceptibility information obtained using conventional QSM, I want to know the separate the &chi<sub>+</sub> &chi<sub>-</sub>. The work involves modelling and simulation.</b></p> 
     </td>
   </tr>
