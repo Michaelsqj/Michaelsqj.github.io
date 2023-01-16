@@ -26,3 +26,4 @@ social: true  # includes social icons at the bottom of the page
 
 I'm also looking forward to exploring various fields, and hoping to work in the interdisciplinary field in the future.
 
+#### <ins>Here's my</ins> [CV]({{ site.baseurl }}/assets/pdf/CV-Qijia_Shen.pdf)
