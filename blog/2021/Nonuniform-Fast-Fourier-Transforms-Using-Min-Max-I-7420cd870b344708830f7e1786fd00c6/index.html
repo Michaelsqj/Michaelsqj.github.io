@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+  </script>
+  
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  </script>
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Qijia  Shen
+
+
+  | Nonuniform Fast Fourier Transforms Using Min-Max Interpolation
+
+</title>
+<meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+">
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+<!-- Code Syntax Highlighting -->
+<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+
+<!-- Styles -->
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="canonical" href="/blog/2021/Nonuniform-Fast-Fourier-Transforms-Using-Min-Max-I-7420cd870b344708830f7e1786fd00c6/">
+
+<!-- JQuery -->
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+
+<!-- Theming-->
+
+<script src="/assets/js/theme.js"></script>
+<script src="/assets/js/dark_mode.js"></script>
+
+
+
+
+
+
+    
+<!-- MathJax -->
+<script type="text/javascript">
+  // window.MathJax = {
+  //   tex: {
+  //     tags: 'ams'
+  //   }
+  // };
+  window.MathJax = {
+    tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    processEscapes: true
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+
+<script defer type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+  </head>
+
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+    <div class="container">
+      
+      <a class="navbar-brand title font-weight-lighter" href="/">
+       <span class="font-weight-bold">Qijia</span>   Shen
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              about
+              
+            </a>
+          </li>
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/projects/">
+                projects
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/publications/">
+                publications
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          <!-- Blog -->
+          <li class="nav-item active">
+            <a class="nav-link" href="/blog/">
+              blog
+              
+            </a>
+          </li>
+          
+          
+            <div class = "toggle-container">
+              <a id = "light-toggle">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+              </a>
+            </div>
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Nonuniform Fast Fourier Transforms Using Min-Max Interpolation</h1>
+    <p class="post-meta">September 25, 2021</p>
+  </header>
+
+  <article class="post-content">
+    <h2 id="1d-case">1D case</h2>
+
+<p><strong>equally spaced</strong> samples $x_n$    <strong>———→</strong>     <strong>nonuniform spaced</strong> frequency locations ${\omega_m}$</p>
+
+<p><strong><em>FT</em></strong>: $X(\omega)=\sum_{n=0}^{N-1}x_ne^{-i\omega n}$</p>
+
+<p>直接计算需要$O(MN)$，快速的计算方法就是 <strong>NUFFT</strong></p>
+
+<h3 id="1-weighted-k-point-fft--kn-">1. Weighted K-point FFT ( <strong>K≥N</strong> )</h3>
+
+<p>$Y_k =\sum_{n=0}^{N-1}s_nx_ne^{-i\gamma kn}$， (k= 0, …, K-1； $\gamma=2\pi/K$)</p>
+
+<p>其中$s_n$是scaling vector，<strong>partially pre-compensate for imperfections in the subsequent frequency-domain interpolation</strong></p>
+
+<h3 id="2-approximate-xomega-_m-by-interpolating-y_k">2. Approximate $X(\omega _m)$ by interpolating $Y_k$</h3>
+
+<p>$\hat{X}(\omega_m)=\sum_{k=0}^{K-1}v_{mk}^{*}Y_k$，(m=1,…., M)</p>
+
+<p>傅立叶反变换$Y_k$，有$x_n=1/K\sum_{k=0}^{K-1}Y_ke^{i\gamma kn}$</p>
+
+<p>根据<em><strong>FT</strong>，$X(\omega)=\sum_{n=0}^{N-1}x_ne^{-i\omega n}=X(\omega)=\sum_{n=0}^{N-1}\left[\frac{1}{K}\sum_{k=0}^{K-1}Y_ke^{i\gamma kn}\right]e^{-i\omega n}=\sum_{k=0}^{K-1}Y_k\left[\sum_{n=0}^{N-1}\frac{1}{K}e^{in(\gamma k-\omega)}\right]$</em></p>
+
+<p><strong>Dirichlet-like “periodic sinc” function</strong></p>
+
+<div class="row mt-3"><div class="col-sm mt-3 mt-md-0"><img class="img-fluid rounded z-depth-1" src="/assets/img/Nonuniform%20Fast%20Fourier%20Transforms%20Using%20Min-Max%20I%207420cd870b344708830f7e1786fd00c6/Untitled.png" data-zoomable="" /></div></div>
+
+<p>现在复杂度为$O(MK)$，依旧很高</p>
+
+<p>为了进一步降低计算复杂度，我们仅选择与$\omega_m$最近的 j 个$Y_k$进行interpolation。因此计算复杂度为$O(MJ),J\ll K$。</p>
+
+<p>定义<strong>integer offset $k_m=k_0(\omega_m)$</strong>，定义为离$\omega _m$的最大offset （<strong>也就是 $J$个$Y_k$中最小的一个</strong>）</p>
+
+<div class="row mt-3"><div class="col-sm mt-3 mt-md-0"><img class="img-fluid rounded z-depth-1" src="/assets/img/Nonuniform%20Fast%20Fourier%20Transforms%20Using%20Min-Max%20I%207420cd870b344708830f7e1786fd00c6/Untitled%201.png" data-zoomable="" /></div></div>
+
+<p>定义$**u_j(\omega _m), j=1,…J$，为$J$个interpolation weights**。</p>
+
+<div class="row mt-3"><div class="col-sm mt-3 mt-md-0"><img class="img-fluid rounded z-depth-1" src="/assets/img/Nonuniform%20Fast%20Fourier%20Transforms%20Using%20Min-Max%20I%207420cd870b344708830f7e1786fd00c6/Untitled%202.png" data-zoomable="" /></div></div>
+
+<p>$\hat{X}(\omega_m)=\sum_{j=1}^{J}Y_{k_m+j}u^*_j(\omega _m)$</p>
+
+<p><strong>下一步就是选择$u_j(\omega _m)$，使得$\hat{X}(\omega _m)$接近$X(\omega _m)$</strong></p>
+
+<h3 id="3-min-max-criterion-for-choosing-u_jomega-_m">3. <strong>Min-max criterion</strong> for choosing <strong>$u_j(\omega _m)$</strong></h3>
+
+<p>$x$是任意的N维signal（已经归一化），<strong>因此对 $s$ 和 $u$ 的优化分别由两个 $min,max$ 构成</strong>。</p>
+
+<div class="row mt-3"><div class="col-sm mt-3 mt-md-0"><img class="img-fluid rounded z-depth-1" src="/assets/img/Nonuniform%20Fast%20Fourier%20Transforms%20Using%20Min-Max%20I%207420cd870b344708830f7e1786fd00c6/Untitled%203.png" data-zoomable="" /></div></div>
+
+<p>对于<strong>外层</strong>的$min, max$，仅有<strong>数值优化解</strong>，对于<strong>内层</strong>的$min,max$，有<strong>解析解</strong></p>
+
+<ul>
+  <li>
+    <p>对于<strong>内层的 $min,max$</strong></p>
+
+    <p>$|\hat{X}(\omega _m)-X(\omega _m)|=|\sum_{j=1}^{J}Y_{k_m+j}u^*_j(\omega _m)-X(\omega _m)|$</p>
+
+    <p>带入$Y_k$</p>
+
+    <p><strong>先计算$\mathop{max}\limits_{||x||=1}$</strong></p>
+
+    <p>$\sum_{j=1}^{J}u^*_j(\omega _m)\left[\sum_{n=0}^{N-1}s_nx_ne^{-i\gamma (k_m+j)n}\right]-\sum_{n=0}^{N-1}x_ne^{-i\omega n}$</p>
+
+    <p>=$\sqrt{N}\sum_{n=0}^{N-1}x_n\cdot\frac{1}{\sqrt{N}}\left[s_n\sum_{j=1}^{J}u_j^*(\omega_m)e^{-i\gamma(k_0(\omega)+j)n}-e^{-i\omega_mn}\right]$</p>
+
+    <p>=$\sqrt{N}&lt;\vec{x},\vec{g}(\omega_m)&gt;$</p>
+
+    <p>$\mathop{max}\limits_{||x||=1}=||g(\omega)||_2^2$，当$\vec{x}$与$\vec{g}(\omega_m)$共线。</p>
+
+    <p><strong>进而求 $\mathop{min}\limits_{u}$</strong></p>
+
+    <div class="row mt-3"><div class="col-sm mt-3 mt-md-0"><img class="img-fluid rounded z-depth-1" src="/assets/img/Nonuniform%20Fast%20Fourier%20Transforms%20Using%20Min-Max%20I%207420cd870b344708830f7e1786fd00c6/Untitled%204.png" data-zoomable="" /></div></div>
+
+    <p><strong>当$S’C\Lambda u=b$，即 $u=\Lambda’[C’SS’C]^{-1}C’Sb$ 时，最小。</strong></p>
+
+    <ul>
+      <li>通过对$S’C=QR$ 分解，进而$u=\Lambda’(\omega)R^{-1}Q’b(\omega)$，同时<strong>QR分解与 $x$ 无关，可以提前计算。</strong></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="4-efficient-computation">4. Efficient computation</h3>
+
+<p>将上述式子重新写成 $u(\omega)=\Lambda’(\omega)Tr(\omega)$，( $T=[C’SS’C]^{-1}$，$r’(\omega)=C’Sb(\omega)$ )</p>
+
+<ul>
+  <li>
+    <p><strong>T是可以提前计算的，为了快速计算T，将$s_n$写成 truncated fourier series</strong></p>
+
+    <p>$s_n=\sum_{t=-L}^L \alpha_te^{i\gamma\beta t(n-\mu_0)}$</p>
+
+    <p>$T^{-1}_{l,j}=\sum_{n=0}^{N-1}C^*_{nl}S_nS_n^*C_{nj}$</p>
+
+    <p>$=1/N\sum_{n=0}^{N-1}\sum_{t=-L}^{L}\sum_{s=-L}^{L}\alpha_t\alpha_s^*e^{i\gamma(j-l+\beta(t-s))(n-\mu_0)}$</p>
+
+    <p>$=\sum_{t=-L}^{L}\sum_{s=-L}^{L}\alpha_t\alpha_s^* \delta_N(j-l+\beta(t-s))$</p>
+
+    <p>因此$T$ 既是 $Hermitian$  也是 $Toeplitz$  。</p>
+
+    <ul>
+      <li>$Hermitian$ : 共轭对称矩阵 ( $**l$ 和 $j$ 可以对换** )</li>
+      <li>$Toeplitz$ : 矩阵各斜线上元素相等 ( <strong>只和 $j-l$ 有关</strong> )</li>
+    </ul>
+
+    <div class="row mt-3"><div class="col-sm mt-3 mt-md-0"><img class="img-fluid rounded z-depth-1" src="/assets/img/Nonuniform%20Fast%20Fourier%20Transforms%20Using%20Min-Max%20I%207420cd870b344708830f7e1786fd00c6/Untitled%205.png" data-zoomable="" /></div></div>
+  </li>
+  <li>
+    <p>$r’(\omega)=C’Sb(\omega)$</p>
+
+    <p>$r_j(\omega)=\sum_{t=-L}^{L}\alpha_t \frac{1}{N}\sum_{n=0}^{N-1}e^{i\gamma[\omega/\gamma-k_0(\omega)-j+\beta t](n-\mu_0)}$</p>
+
+    <p>$=\sum_{t=-L}^{L}\alpha_t \delta_N(\omega/\gamma-k_0(\omega)-j+\beta t)$</p>
+  </li>
+</ul>
+
+<p>综上，可以提前计算 $T$ ,并且 $T$ 只有$J\times J$ 比较小</p>
+
+<h3 id="5-减少提前计算项对n的依赖">5. 减少提前计算项对N的依赖</h3>
+
+<p>现在计算$T,r$ 都依赖于 $\delta_N$。也就是换一个signal length N，就要重新计算一次。</p>
+
+<p>现在希望只依赖于$\mu=K/N$。当K 很大时$\delta_N(t)\approx sinc(t/\mu)$，其中$sinc(t)=sin(\pi t)/\pi t$。</p>
+
+<h3 id="6-multidimensional-nufft">6. Multidimensional NUFFT</h3>
+
+<p>$\tilde{T}_{2D}=\tilde{T}_{1D}(J_1,\mu_1)\otimes\tilde{T}_{1D}(J_2,\mu_2)$</p>
+
+<p>$\tilde{r}_{2D}=\tilde{r}_{1D}(J_1,\mu_1)\otimes\tilde{r}_{1D}(J_2,\mu_2)$</p>
+
+<h3 id="7-reduced-fft">7. Reduced FFT</h3>
+
+<p>当$K/N=integer$时，根据 k%(K/N) 余数分组， 可以分 K/N 个FFT 计算 复杂度为 $O(K/N \cdot Nlog(N))$</p>
+
+<h3 id="8-adjoint-operator">8. Adjoint operator</h3>
+
+<p>用于iterative algorithm中的</p>
+
+<p>首先有$\hat{X}=Gx$，$G=VWS$，其中$V$就是interpolation weights, $W_{kn}=e^{-i\gamma kn}$是DFT matrix, $S$ 跟之前的相同。</p>
+
+<p>现在要计算$G’\tilde{y}=S’W’V’\tilde{y}$，由于$G’$ 太大，不能直接矩阵乘法</p>
+
+<ul>
+  <li>先计算$\tilde{X}_k=\sum_{m=1}^M v_{mk}\tilde{y}_m$</li>
+  <li>再计算$\tilde{x}_n=\sum_{k=0}^{K-1}\tilde{X}_ke^{i\gamma kn}$</li>
+</ul>
+
+<h3 id="9-nonuniform-inverse-fft">9. Nonuniform inverse FFT</h3>
+
+<p>uniformly spaced frequency samples → nonuniform spatial locations</p>
+
+<h3 id="10-inverse-nufft">10. Inverse NUFFT</h3>
+
+<p>e.g., non-Cartesian k-space → MRI recon</p>
+
+\[\hat{x}=\mathop{argmin}\limits_{x}||X-Gx||\]
+
+<p><strong>$G$ is adjoint operator。</strong></p>
+
+<p>只能使用iterative algorithm求解，而iterative algorithm 经常需要 <strong>forward calculation</strong> object space→ frequency space ，这时就是NUFFT有用的时候了。</p>
+
+<h3 id="11-选择s_n">11. 选择$s_n$</h3>
+
+<h3 id="12-传统插值方法">12. 传统插值方法</h3>
+
+<ul>
+  <li>
+    <p>Apodized Dirichlet</p>
+  </li>
+  <li>
+    <p>Truncated Gaussian bell</p>
+  </li>
+  <li>
+    <p>Kaiser Bessel</p>
+  </li>
+</ul>
+
+  </article>
+
+  
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <!-- 
+<footer class="fixed-bottom">
+  <div class="container mt-0">
+    &copy; Copyright 2023 Qijia  Shen.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+
+    
+    
+  </div>
+</footer>
+
+ -->
+
+  </body>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+
+</html>

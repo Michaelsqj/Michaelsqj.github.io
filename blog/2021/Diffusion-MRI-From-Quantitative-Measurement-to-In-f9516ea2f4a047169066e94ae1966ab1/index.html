@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+  </script>
+  
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  </script>
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Qijia  Shen
+
+
+  | Diffusion MRI From Quantitative Measurement to In-vivo Neuroanatomy
+
+</title>
+<meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+">
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+<!-- Code Syntax Highlighting -->
+<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+
+<!-- Styles -->
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="canonical" href="/blog/2021/Diffusion-MRI-From-Quantitative-Measurement-to-In-f9516ea2f4a047169066e94ae1966ab1/">
+
+<!-- JQuery -->
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+
+<!-- Theming-->
+
+<script src="/assets/js/theme.js"></script>
+<script src="/assets/js/dark_mode.js"></script>
+
+
+
+
+
+
+    
+<!-- MathJax -->
+<script type="text/javascript">
+  // window.MathJax = {
+  //   tex: {
+  //     tags: 'ams'
+  //   }
+  // };
+  window.MathJax = {
+    tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    processEscapes: true
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+
+<script defer type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+  </head>
+
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+    <div class="container">
+      
+      <a class="navbar-brand title font-weight-lighter" href="/">
+       <span class="font-weight-bold">Qijia</span>   Shen
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              about
+              
+            </a>
+          </li>
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/projects/">
+                projects
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/publications/">
+                publications
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          <!-- Blog -->
+          <li class="nav-item active">
+            <a class="nav-link" href="/blog/">
+              blog
+              
+            </a>
+          </li>
+          
+          
+            <div class = "toggle-container">
+              <a id = "light-toggle">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+              </a>
+            </div>
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Diffusion MRI From Quantitative Measurement to In-vivo Neuroanatomy</h1>
+    <p class="post-meta">September 25, 2021</p>
+  </header>
+
+  <article class="post-content">
+    <hr />
+
+<h2 id="chapter-1-introduction"><strong>Chapter 1, Introduction</strong></h2>
+
+<h3 id="diffusion-原理free-diffusion"><strong>Diffusion 原理，Free Diffusion</strong></h3>
+
+<p>Fick’s first law:</p>
+
+\[J=-D\nabla C\]
+
+<p>J是net particle flux，C是particle concentration，D is diffusion coefficient (defined by <strong>size of diffusion molecules, temperature，  microstructural features of the environment</strong>)</p>
+
+<p>diffusion 来源：仅仅是 collisions between atoms or molecules。不管在平衡态还是非平衡态，微观上都有运动。</p>
+
+\[&lt;x^2&gt;=2D\Delta\]
+
+<p>x 是diffusion distance，时间是$\Delta$。</p>
+
+<p>MR signal attenuation，用来测量MR的relaxation。</p>
+
+\[E(q)=S(q)/S(0), \quad q=\gamma \delta G\]
+
+<p>eliminates the effect of relaxation。</p>
+
+\[E(q)=\int\rho(x_1)\int P(x_1,x_2,\Delta)e^{-iq(x_2-x_1)}dx_1dx_2\]
+
+<p>Diffusion propogator (Green’s function): $P(x_1,x_2,\Delta)$，表示particle 一开始在$x_1$，$\Delta$之后，在$x_2$的概率。</p>
+
+<p>$\rho(x_1)$：代表了在$x_1$处找到一个particle 的概率。</p>
+
+\[lim_{t-&gt;\infin}P(x_1,x_2,t)=\rho(x_1)\]
+
+<p><strong>因为当 $t-&gt;\infin$时，一个particle到空间任何一个位置都有相同的概率，这种情况就跟在$x_1$处有一个particle 一样。</strong></p>
+
+<p>Free Diffusion：$E(q)=e^{-q^2D\Delta}$， 考虑pulse duration后，$E(q)=e^{-q^2D\Delta-\delta/3}=e^{-bD}$，</p>
+
+<p><code class="language-plaintext highlighter-rouge">b-value</code>：其中的$b=q^2(\Delta-\delta/3)$</p>
+
+<p>上述方法可以用来描述<strong>free, anisotropic diffusion in the principal frame of reference</strong></p>
+
+<p>我们不希望预设任何数学模型，只希望获得local propogator来measure microstructural features。但是low resolution和inability to obtain spin density阻碍了local propogator的获得，因此我们ensemble average来简化问题。</p>
+
+\[E(q)=\int\overline{P}(x,\Delta)e^{-iqx}dx\\\overline{P}(x,\Delta)=\int\rho(x_1)P(x_1,x_1+\Delta x,t)dx_1\]
+
+<p>可以看到$E(q)$和$x$之间通过 Fourier Transform联系起来，<code class="language-plaintext highlighter-rouge">q-space imaging,  Diffusion Spectrum Imaging</code>。</p>
+
+<h3 id="diffusion-in-neural-tissue-影响free-diffusion-的因素"><strong>Diffusion in Neural Tissue (影响free diffusion 的因素)</strong></h3>
+
+<hr />
+
+<h2 id="chapter-2-pulse-sequence-for-diffusion-weighted-mri"><strong>Chapter 2, Pulse Sequence for Diffusion-Weighted MRI</strong></h2>
+
+<h3 id="adding-diffusion-weighting-to-pulse-sequence"><strong>Adding Diffusion Weighting to Pulse Sequence</strong></h3>
+
+<p>generalized b-value definition: $b=\int |k_x(t)|^2+|k_y(t)|^2+|k_z(t)|^2 dt$，$k_x(t)=\gamma\int G_x(t)dt$  position on k-space</p>
+
+<p>Two sources of error in DWI: <code class="language-plaintext highlighter-rouge">eddy currents</code>, <code class="language-plaintext highlighter-rouge">gradient nonlinearity</code></p>
+
+<p>eddy currents 原理：gradient coils 会产生magnetic fields ，进而在超导线圈周围的液氦中产生感生电场，也就是eddy current。主要由gradient slewing 产生，梯形gradient的上升支和下降支可以相互抵消。</p>
+
+<h3 id="bulk-motion-sensitivity"><strong>Bulk Motion Sensitivity</strong></h3>
+
+<p>Two sources of bulk motion: <code class="language-plaintext highlighter-rouge">head movement</code>,<code class="language-plaintext highlighter-rouge">cardiac pulsation</code></p>
+
+<p>different shots will lead to different motion, so DWI are generally limited to <code class="language-plaintext highlighter-rouge">single-shot</code>, and the motion remains constant.</p>
+
+<p>一般为了减少采集时间，默认为中心对称的k-space上，我们会进行asymmetric sampling，其中一半可以减少采样数。但是如果由于<code class="language-plaintext highlighter-rouge">head rotation</code>，对称假设不再满足，进而产生<code class="language-plaintext highlighter-rouge">artifact</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">navigator correction</code></p>
+
+<h3 id="single-shot-epi-ss-epi"><strong>Single-shot EPI (SS-EPI)</strong></h3>
+
+<ul>
+  <li>geometric warping from field inhomogeneities</li>
+  <li>geometric warping from gradient-induced eddy currents</li>
+  <li>Intra-voxel dephasing effects on image resolution</li>
+</ul>
+
+<hr />
+
+<h2 id="chapter-3-diffusion-acquisition-pushing-the-boundaries"><strong>Chapter 3, Diffusion Acquisition: Pushing the Boundaries</strong></h2>
+
+<hr />
+
+<h2 id="chapter-4-geometric-distortions-in-diffusion-mri"><strong>Chapter 4, Geometric Distortions in Diffusion MRI</strong></h2>
+
+<p>dMRI 图像相比与structural image 模糊的原因主要由acquisition 序列<strong>EPI造成</strong></p>
+
+<p>EPI对 <strong>off-resonance field</strong> (实际的field 和我们想要的field的差别)比较敏感。</p>
+
+<p>dMRI中的off-resonance field 由 <strong>head</strong> 和 <strong>after effects of switching the gradients</strong> 造成</p>
+
+<h3 id="why-are-epi-distorted">Why are EPI distorted</h3>
+
+<p>EPI distortion 一般沿着<strong>PE</strong>方向。</p>
+
+<p><strong>FE gradien</strong>t: 500~1000Hz/mm</p>
+
+<p><strong>inhomogeneity</strong>: &lt;100Hz</p>
+
+<p>所以在FE direction，误差大概在<strong>0.1~0.2 mm</strong></p>
+
+<p>但是在PE方向上，因为EPI上的PE gradient是“blip”</p>
+
+<div class="row mt-3"><div class="col-sm mt-3 mt-md-0"><img class="img-fluid rounded z-depth-1" src="/assets/img/Diffusion%20MRI%20From%20Quantitative%20Measurement%20to%20In-%20f9516ea2f4a047169066e94ae1966ab1/Untitled.png" data-zoomable="" /></div></div>
+
+<p>所以$T_D$时间内，在一个voxel 的长度$S$上要形成$2\pi/N_{PE}$的phase difference。也就是PE gradient是</p>
+
+<p>$1/N_{PE}T_DS$ Hz/mm。其中$T_D=5\times10^{-4}s$，$S=2mm$，$N_{PE}=96$，PE gradient是<strong>10Hz/mm。</strong>因此在PE direction上，误差大概是<strong>10mm</strong>。</p>
+
+<p>一般PE direction是沿着大脑的左右方向，因为大脑的宽度小于长度。</p>
+
+<h3 id="where-does-the-off-resonance-field-come-from">Where does the off-resonance field come from</h3>
+
+<ol>
+  <li>Susceptibility-Induced Field
+    <ol>
+      <li>Frequency Calibration and Shimming
+        <ul>
+          <li>常数项的场偏移首先会被消除。e.g., 想要3T场强，3T左右的场都会被尝试一遍，直到找到最佳的场强。</li>
+          <li>pre-scan时会采集low-resolution image，然后使用shim coil去抵消一部分off-resonance field，剩下的uncompensated part就是我们指的”off-resonance field”</li>
+        </ul>
+      </li>
+      <li>Subject Movement</li>
+    </ol>
+  </li>
+  <li>
+    <p>Eddy Current-Induced Field</p>
+
+    <p>fields are some <strong>linear combination of linear gradients</strong> in the x-, y-, and z-directions (<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/mrm.1910390518?sid=nlm%3Apubmed">Jezzard et al., 1998</a>)</p>
+
+    <p>expected distortions are <strong>y-zoom, yx- and yz-shear</strong> for data acquired with <strong>PE in the y-direction</strong>, <strong>x-zoom, xy- and xz-shear</strong> for <strong>PE along x</strong>.</p>
+  </li>
+  <li>Concomitant Fields</li>
+</ol>
+
+<h3 id="modified-imaging-techniques-that-yield-less-distorted-images">Modified Imaging Techniques that Yield Less-Distorted Images</h3>
+
+<ol>
+  <li>
+    <p>Parallel Imaging</p>
+  </li>
+  <li>
+    <p>Sequences to Reduce Eddy Currents</p>
+  </li>
+</ol>
+
+<h3 id="imaging-techniques-that-acquire-information-about-the-off-resonance-field">Imaging Techniques that Acquire Information about the Off-Resonance Field</h3>
+
+<ol>
+  <li>
+    <p>Unwarping an Image when the Off-Resonance Field is Known</p>
+
+    <p>如果off-resonance field 和 acquisition parameters 知道，那么就可以从distorted image 重建出corrected image。</p>
+
+    <div class="row mt-3"><div class="col-sm mt-3 mt-md-0"><img class="img-fluid rounded z-depth-1" src="/assets/img/Diffusion%20MRI%20From%20Quantitative%20Measurement%20to%20In-%20f9516ea2f4a047169066e94ae1966ab1/Untitled%201.png" data-zoomable="" /></div></div>
+  </li>
+  <li>
+    <p>Fieldmaps</p>
+  </li>
+  <li>
+    <p>How to Choose $\Delta TE$ for your Fieldmaps</p>
+  </li>
+</ol>
+
+<h3 id="image-registration-based-methods-for-correcting-distortions">Image Registration-Based Methods for Correcting Distortions</h3>
+
+<h3 id="recent-work-at-the-fmrib">Recent Work at the FMRIB</h3>
+
+<hr />
+
+<h2 id="chapter-5-gaussian-modeling-of-the-diffusion-signal"><strong>Chapter 5, Gaussian Modeling of the Diffusion Signal</strong></h2>
+
+<hr />
+
+<h2 id="chapter-6-multiple-fibers-beyond-the-diffusion-tensor"><strong>Chapter 6, Multiple Fibers: Beyond the Diffusion Tensor</strong></h2>
+
+  </article>
+
+  
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <!-- 
+<footer class="fixed-bottom">
+  <div class="container mt-0">
+    &copy; Copyright 2023 Qijia  Shen.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+
+    
+    
+  </div>
+</footer>
+
+ -->
+
+  </body>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+
+</html>

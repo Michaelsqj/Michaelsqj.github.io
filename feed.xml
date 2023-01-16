@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2023-01-16T17:52:56+00:00</updated><id>/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+</subtitle><entry><title type="html">Random walks with barriers</title><link href="/blog/2021/Random-walks-with-barriers-8d8ad8abf9ac4f8bbae764e28a2bc617/" rel="alternate" type="text/html" title="Random walks with barriers" /><published>2021-09-25T00:00:00+01:00</published><updated>2021-09-25T00:00:00+01:00</updated><id>/blog/2021/Random%20walks%20with%20barriers%208d8ad8abf9ac4f8bbae764e28a2bc617</id><content type="html" xml:base="/blog/2021/Random-walks-with-barriers-8d8ad8abf9ac4f8bbae764e28a2bc617/"><![CDATA[]]></content><author><name></name></author><category term="MRI" /><category term="Monte_Carlo_Simulation" /><category term="Paper" /><category term="dMRI" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Realistic simulation of artefacts in diffusion MRI for validating post-processing correction techniques</title><link href="/blog/2021/Realistic-simulation-of-artefacts-in-diffusion-MRI-927d3a312f0f4725b507d7d8ce08f735/" rel="alternate" type="text/html" title="Realistic simulation of artefacts in diffusion MRI for validating post-processing correction techniques" /><published>2021-09-25T00:00:00+01:00</published><updated>2021-09-25T00:00:00+01:00</updated><id>/blog/2021/Realistic%20simulation%20of%20artefacts%20in%20diffusion%20MRI%20927d3a312f0f4725b507d7d8ce08f735</id><content type="html" xml:base="/blog/2021/Realistic-simulation-of-artefacts-in-diffusion-MRI-927d3a312f0f4725b507d7d8ce08f735/"><![CDATA[]]></content><author><name></name></author><category term="MRI" /><category term="Paper" /><summary type="html"><![CDATA[Simulation; Eddy; Distortion]]></summary></entry><entry><title type="html">Recent advances in parallel imaging for MRI</title><link href="/blog/2021/Recent-advances-in-parallel-imaging-for-MRI-c39a58fc0fb54bb286ae41fc89cc0599/" rel="alternate" type="text/html" title="Recent advances in parallel imaging for MRI" /><published>2021-09-25T00:00:00+01:00</published><updated>2021-09-25T00:00:00+01:00</updated><id>/blog/2021/Recent%20advances%20in%20parallel%20imaging%20for%20MRI%20c39a58fc0fb54bb286ae41fc89cc0599</id><content type="html" xml:base="/blog/2021/Recent-advances-in-parallel-imaging-for-MRI-c39a58fc0fb54bb286ae41fc89cc0599/"><![CDATA[]]></content><author><name></name></author><category term="MRI" /><category term="Paper" /><category term="Parallel_Imaging" /><category term="Review" /><summary type="html"><![CDATA[Parallel Imaging]]></summary></entry><entry><title type="html">Reconstruction of Non-Cartesian Data</title><link href="/blog/2021/Reconstruction-of-Non-Cartesian-Data-ba27c9056afe4fd5a5c79451b748febb/" rel="alternate" type="text/html" title="Reconstruction of Non-Cartesian Data" /><published>2021-09-25T00:00:00+01:00</published><updated>2021-09-25T00:00:00+01:00</updated><id>/blog/2021/Reconstruction%20of%20Non-Cartesian%20Data%20ba27c9056afe4fd5a5c79451b748febb</id><content type="html" xml:base="/blog/2021/Reconstruction-of-Non-Cartesian-Data-ba27c9056afe4fd5a5c79451b748febb/"><![CDATA[<h3 id="impulse-response">Impulse response</h3>
+
+<p>sampling pattern: $S(k_x,k_y)$.  The impulse response of the system $s(x,y)$</p>
+
+<h2 id="gridding-reconstruction">Gridding reconstruction</h2>]]></content><author><name></name></author><category term="MRI" /><category term="Paper" /><category term="Reconstruction" /><category term="Review" /><summary type="html"><![CDATA[Impulse response]]></summary></entry><entry><title type="html">Sampling Density Compensation in MRI Rationale and an Iterative Numerical Solution</title><link href="/blog/2021/Sampling-Density-Compensation-in-MRI-Rationale-and-01cdd1bb05f74c89acc50633afe771f7/" rel="alternate" type="text/html" title="Sampling Density Compensation in MRI Rationale and an Iterative Numerical Solution" /><published>2021-09-25T00:00:00+01:00</published><updated>2021-09-25T00:00:00+01:00</updated><id>/blog/2021/Sampling%20Density%20Compensation%20in%20MRI%20Rationale%20and%2001cdd1bb05f74c89acc50633afe771f7</id><content type="html" xml:base="/blog/2021/Sampling-Density-Compensation-in-MRI-Rationale-and-01cdd1bb05f74c89acc50633afe771f7/"><![CDATA[]]></content><author><name></name></author><category term="MRI" /><category term="Paper" /><category term="Trajectory" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">问题：</title><link href="/blog/2021/Siemens-Sequence-Programming-98cd4ee883e442eb8909d55f86530821/" rel="alternate" type="text/html" title="问题：" /><published>2021-09-25T00:00:00+01:00</published><updated>2021-09-25T00:00:00+01:00</updated><id>/blog/2021/Siemens%20Sequence%20Programming%2098cd4ee883e442eb8909d55f86530821</id><content type="html" xml:base="/blog/2021/Siemens-Sequence-Programming-98cd4ee883e442eb8909d55f86530821/"><![CDATA[<ol>
+  <li>如何在idea中设置channel</li>
+  <li>什么是user interface？为什么要用ParameterMap?</li>
+</ol>
+
+<h1 id="video-tutorial">Video tutorial</h1>
+
+<h2 id="1-idea-cvs-makefiles-grep-cygwin-idea-directory-structure-sde-commands-compiling-poet-unit-test">1. IDEA, CVS, makefiles, grep, cygwin, IDEA directory structure, sde commands, compiling, POET, unit test</h2>
+
+<p>IDEA版本：VB17运行在xp上是最老的，VD11运行在win7上比较新，VE是最新的运行在linux上，用在PRISMA机器上。VD和VE只是GUI不一样，用的机器不一样，其他都是一样的。但是VB和其他两个差别比较大</p>
+
+<p>unit test</p>
+
+<p>simple unit test: 检查parameters，每次写程序必须是从Siemens提供的程序开始。</p>
+
+<p>extended unit test:</p>
+
+<p>cygwin: shell on windows</p>
+
+<p>grep: 搜索命令</p>
+
+<p>cvs: version control</p>
+
+<h2 id="2-overview-of-idea-sequence-programming">2. Overview of IDEA sequence programming</h2>
+
+<div class="row mt-3"><div class="col-sm mt-3 mt-md-0"><img class="img-fluid rounded z-depth-1" src="/assets/img/Siemens%20Sequence%20Programming%2098cd4ee883e442eb8909d55f86530821/Untitled.png" data-zoomable="" /></div></div>
+
+<p>VB17 architecture (different from VE)</p>
+
+<p>由三个不同的电脑，不同系统组成</p>
+
+<p><strong>MrProt</strong>: data structure 包含了所有的序列信息</p>
+
+<p><strong>SBB(sequence building block)</strong>: do a specific bit of the pulse sequence (init, prep, run, check function)</p>
+
+<p><strong>RTEB</strong>(real-time event block) : the actual waveform information</p>
+
+<p>MRIR (MR-image reconstruction computer)</p>
+
+<p>SeqExpo: 告知MRIR一些序列信息，从而执行特定的reconstruction</p>
+
+<p><strong>DLLs</strong>:</p>
+
+<ul>
+  <li>
+    <p>compilation:</p>
+
+    <p>compilation of the sequence produce <strong>.dll</strong> rather than executable</p>
+
+    <p>scanner has a <strong>main()</strong> that loads the requested <strong>.dll</strong> at runtime</p>
+
+    <p>compilation also makes ancillary files (<strong>.lib .exp</strong>) with import info for <strong>linking</strong></p>
+  </li>
+  <li>
+    <p>different dll</p>
+
+    <p>on <strong>desktop</strong>, “<strong>debug</strong>” version (e.g., MySequenced.dll)</p>
+
+    <p>on <strong>scanner</strong>, “<strong>release</strong>” version (e.g., MySequence.dll)</p>
+
+    <p>on scanner, there are two .dll, for <strong>host</strong> (<strong>.dll</strong>), for <strong>MPCU</strong> (<strong>.i86</strong>)</p>
+  </li>
+</ul>
+
+<p><strong>Makefiles</strong>:</p>
+
+<p>two make files (e.g., Mysequence.<strong>mk</strong>, makefile.<strong>trs</strong>)</p>
+
+<p>how to link? <strong>LDLIBS += LibToLink.lib</strong>, <strong>LDDLLS += LibToLink.dll</strong></p>
+
+<p><strong>c++ classes</strong>:</p>
+
+<p>将各种实体硬件等抽象成classes</p>
+
+<ul>
+  <li>Hardware proxy classes: 表示physical amplifier, gradient等</li>
+  <li>real-time event classes: 表示pulse sequence component (e.g., RF pulses)</li>
+  <li>control classes: 控制程序执行细节 (e.g., looping)</li>
+  <li>data classes: 包含proctocol info etc.</li>
+</ul>
+
+<p><strong>Inheritance</strong>:</p>
+
+<p>从base class不断具体化</p>
+
+<p>e.g., <code class="language-plaintext highlighter-rouge">RTEvent</code> ⇒ <code class="language-plaintext highlighter-rouge">sGRAD_PULSE_BASE</code> ⇒ <code class="language-plaintext highlighter-rouge">sGRAD_PULSE_TRAP</code> ⇒ <code class="language-plaintext highlighter-rouge">sGRAD_PULSE_PE</code></p>
+
+<h3 id="important-data-classes">Important data classes</h3>
+
+<p><strong>SeqLim</strong></p>
+
+<p>proctocol limit (e.g., 50&lt;FOV&lt;500 mm)</p>
+
+<p>set in <code class="language-plaintext highlighter-rouge">fSEQInit</code>, read-only in <code class="language-plaintext highlighter-rouge">fSEQPrep</code></p>
+
+<p><strong>MrProt</strong></p>
+
+<p>current sequence proctocol (e.g., FOV=240 mm)</p>
+
+<p>set in <code class="language-plaintext highlighter-rouge">fSEQPrep</code></p>
+
+<p><strong>SeqExpo</strong></p>
+
+<p>secondary parameters indirectly set by proctocol (e.g., RF energy)</p>
+
+<p>filled in <code class="language-plaintext highlighter-rouge">fSEQPrep</code> <strong>**, passed to **MRIR</strong></p>
+
+<p><strong>Mdh</strong> (measurement data header)</p>
+
+<p>info on <strong>current</strong> data frame (e.g., current PE line is 32)
+filled in <code class="language-plaintext highlighter-rouge">fSEQRun</code>, passed to <strong>MRIR</strong></p>
+
+<h3 id="idea-at-10000-feet-in-a-broad-view-implement-fseq-functions">IDEA at 10000 feet (in a broad view), implement fSEQ functions</h3>
+
+<p><strong>fSEQInit</strong>: Run <strong>once</strong> when sequence is selected</p>
+
+<ul>
+  <li>Define “hard limits”, fill in <code class="language-plaintext highlighter-rouge">SeqLim</code> (absolute max/mins for TR, FOV, etc.)</li>
+  <li>Set up <strong>default protocol</strong> (must be a valid protocol!)</li>
+</ul>
+
+<p><strong>fSEQPrep</strong>: Run on <strong>host</strong> <strong>each time protocol modified</strong>, <strong>once</strong> on <strong>MPCU</strong></p>
+
+<ul>
+  <li>Use protocol contained in <code class="language-plaintext highlighter-rouge">MrProt</code> to calculate specific sequence (timings, etc)</li>
+  <li><strong>Binary search mode</strong>: Define “soft limits” (max/mins for parameters given current
+protocol… e.g., <strong>max TE given TR</strong>)</li>
+  <li>Make sure current <strong>protocol is possible</strong> (protocol must be “consistent”)</li>
+</ul>
+
+<p><strong>fSEQCheck</strong>: Run <strong>once</strong> on <strong>MCPU</strong> between <code class="language-plaintext highlighter-rouge">fSEQPrep</code> and <code class="language-plaintext highlighter-rouge">fSEQRun</code></p>
+
+<ul>
+  <li>Gradient <strong>safety watchdog</strong>, check “corners” of sequence for stimulation levels</li>
+</ul>
+
+<p><strong>fSEQRun</strong>: Run <strong>once</strong> on <strong>MCPU</strong> (this is the real action!)</p>
+
+<ul>
+  <li>Implement/oversee real-time sequence events (RTEB, etc)</li>
+  <li>Label k-space data with Mdh class (passed to recon computer)</li>
+</ul>
+
+<p><strong>fSEQRunKernel</strong>: <strong>Optional</strong> function called <strong>within</strong> <code class="language-plaintext highlighter-rouge">fSEQRun</code> <strong>TR loop</strong></p>
+
+<ul>
+  <li>Implements <strong>actual real-time events</strong> for current TR</li>
+</ul>
+
+<p>Use <strong>compiler directive</strong> to limit any code section on <strong>host</strong>/ <strong>MPCU</strong></p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#IFDEF VXWORKS
+</span>      <span class="c1">// code to be only be executed on MPCU</span>
+<span class="cp">#ENDIF
+#IFNDEF VXWORKS
+</span>      <span class="c1">// code to be only be executed on host</span>
+<span class="cp">#ENDIF
+</span></code></pre></div></div>
+
+<h3 id="idea-at-5000-feet-real-time-events">IDEA at 5000 feet: Real-time Events</h3>
+
+<p><strong>Real-time events 在 real-time event block中执行</strong></p>
+
+<p><strong>Real-Time Events (libRT)</strong></p>
+
+<p><strong>Classes</strong> that implement <strong>precisely-timed instructions</strong> for <strong>hardware proxies</strong>
+(e.g., Gradient waveforms (<code class="language-plaintext highlighter-rouge">sGRAD_PULSE</code>), RF pulses (<code class="language-plaintext highlighter-rouge">sRF_PULSE</code>), ADC readouts (<code class="language-plaintext highlighter-rouge">sREADOUT</code>), etc.)</p>
+
+<p><strong>Life cycle of a real-time event</strong></p>
+
+<p><strong>Configure</strong>: Set <strong>properties</strong> based on protocol (e.g., <strong>gradient amplitude</strong>)
+<strong>Prep</strong>: Calculate specific <strong>details</strong> of event (e.g., <strong>RF waveform</strong>)
+<strong>Run</strong>: Place on execution queue (within <strong>real-time event block</strong>)</p>
+
+<p><strong>Preparation of real-time events</strong></p>
+
+<p>Prepare pulse with initialized properties</p>
+
+<p>(e.g., gradient pulses: <code class="language-plaintext highlighter-rouge">.prepSymmetricTOTShortestTime()</code>, <code class="language-plaintext highlighter-rouge">.prepAmplitude()</code>, <code class="language-plaintext highlighter-rouge">.prepMomentumTOT()</code>)</p>
+
+<p>Detecting <strong>prep failure</strong> used to detect “<strong>soft limits</strong>” when <code class="language-plaintext highlighter-rouge">fSEQPrep</code> is run in <strong>binary search mode</strong> (i.e., limits given current parameters)</p>
+
+<p><strong>Gradients</strong> need to be <strong>validated</strong> against hardware specs with <code class="language-plaintext highlighter-rouge">.check()</code></p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Declare pulse in global section:</span>
+<span class="k">static</span> <span class="n">sRF_PULSE_SINC</span> <span class="nf">sSRF</span> <span class="p">(</span><span class="s">"sSRF"</span><span class="p">);</span>
+
+<span class="c1">// Set from protocol and prepare in fSEQPrep:</span>
+<span class="c1">// configure parameters of RF pulse</span>
+<span class="n">sSRF</span><span class="p">.</span><span class="n">setDuration</span>         <span class="p">(</span><span class="mi">1280</span><span class="p">)</span> <span class="p">;</span>
+<span class="n">sSRF</span><span class="p">.</span><span class="n">setFlipAngle</span>        <span class="p">(</span><span class="n">pMrProt</span><span class="o">-&gt;</span><span class="n">flipAngle</span><span class="p">());</span>
+<span class="c1">// prep RF pulse</span>
+<span class="k">if</span><span class="p">(</span><span class="o">!</span> <span class="n">sSRF</span><span class="p">.</span><span class="n">prepSinc</span><span class="p">(</span><span class="n">pMrProt</span><span class="p">,</span><span class="n">pSeqExpo</span><span class="p">))</span> <span class="k">return</span> <span class="p">(</span><span class="n">sSRF</span><span class="p">.</span><span class="n">getNLSStatus</span><span class="p">());</span>
+
+<span class="c1">// Insert into event block in fSEQRunKernel: // execute RF pulse in real-time event block</span>
+<span class="n">fRTEI</span><span class="p">(</span> <span class="n">lTRF</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">sSRF</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+
+<span class="c1">// Alternatively, call run() method in fSEQRunKernel:</span>
+<span class="c1">// execute RF pulse with “run” statement</span>
+<span class="n">sSRF</span><span class="p">.</span><span class="n">setStartTime</span><span class="p">(</span><span class="n">lTRF</span><span class="p">);</span>
+<span class="n">sSRF</span><span class="p">.</span><span class="n">run</span><span class="p">();</span>
+</code></pre></div></div>
+
+<h3 id="idea-at-5000-feet-real-time-event-blocks">IDEA at 5000 feet: Real-time Event Blocks</h3>
+
+<p><strong>Real-time events 在 real-time event block中执行，分三步</strong></p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">fRTEBInit</code> 打开event block</li>
+  <li><code class="language-plaintext highlighter-rouge">fRTEI</code> 在指定时间开始所有的events</li>
+  <li><code class="language-plaintext highlighter-rouge">fRTEBFinish</code> 关闭event block</li>
+</ol>
+
+<div class="row mt-3"><div class="col-sm mt-3 mt-md-0"><img class="img-fluid rounded z-depth-1" src="/assets/img/Siemens%20Sequence%20Programming%2098cd4ee883e442eb8909d55f86530821/Untitled%201.png" data-zoomable="" /></div></div>
+
+<p><strong>如何设置channel</strong></p>
+
+<h3 id="idea-at-5000-feet-sbbs-and-seqloop">IDEA at 5000 feet: SBBs and SeqLoop</h3>
+
+<p><strong>Sequence Building Blocks (libSBB)</strong></p>
+
+<ul>
+  <li>包含了real-time event block</li>
+  <li>SBB可以和low-level real-time event结合</li>
+</ul>
+
+<p>(e.g., SBBCSat (sat pulses), SBBDiffusion (diffusion gradients), SBBEPIReadOut (EPI))</p>
+
+<p><strong>SeqLoop class</strong></p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">SeqLoop</code>控制standard looping structure的时间(sequential, interleaved, 3D)</li>
+  <li><code class="language-plaintext highlighter-rouge">fSEQRun</code> 将控制交给<code class="language-plaintext highlighter-rouge">SeqLoop</code>, <code class="language-plaintext highlighter-rouge">SeqLoop</code> 会调用<code class="language-plaintext highlighter-rouge">fSEQRunKernel</code></li>
+</ul>
+
+<div class="row mt-3"><div class="col-sm mt-3 mt-md-0"><img class="img-fluid rounded z-depth-1" src="/assets/img/Siemens%20Sequence%20Programming%2098cd4ee883e442eb8909d55f86530821/Untitled%202.png" data-zoomable="" /></div></div>
+
+<p>SBB plug-in: 可以自己实现SBB插入到这里，比如spin echo，diffusion</p>
+
+<p><strong>using ParameterMap library? user interface?</strong></p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span>      <span class="cpf">"ParameterMap.h"</span><span class="cp">
+</span>
+<span class="c1">//In fSEQInit():</span>
+<span class="n">BEGIN_PARAMETER_MAP</span><span class="p">(</span><span class="n">pSeqLim</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="n">PARAM</span><span class="p">(</span><span class="s">"Read Spoiler"</span><span class="p">,</span> <span class="s">"cyc/px"</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">dReadSpoilCycles</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">8.0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span>
+      <span class="s">"UI for readout spoiler gradient"</span><span class="p">);</span>
+<span class="n">END_PARAMETER_MAP</span><span class="p">;</span>
+
+<span class="c1">//In fSEQPrep():</span>
+<span class="n">PREPARE_PARAMETER_MAP</span><span class="p">(</span><span class="n">pMrProt</span><span class="p">,</span><span class="n">pSeqLim</span><span class="p">);</span>
+<span class="p">...</span>
+<span class="n">UPDATE_PROTOCOL</span><span class="p">(</span><span class="n">pMrProt</span><span class="p">,</span> <span class="n">pSeqLim</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="3-detailed-overview-of-miniflash-example-code">3. Detailed overview of MiniFLASH example code</h2>
+
+<p><strong>mc</strong>/<strong>ms</strong> ：进行编译，有选项是release / debug</p>
+
+<p><strong>poet</strong>: 进入simulation环境</p>
+
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//must include these two headers</span>
+<span class="cp">#include</span> <span class="cpf">"MrServers/MrMeasSrv/SeqIF/sde_allincludes.h"</span><span class="cp">
+#include</span> <span class="cpf">"MrServers/MrImaging/seq/SystemProperties.h"</span><span class="cp">
+</span><span class="c1">// NLS_SEV is the dictionary of error code</span>
+<span class="cp">#define OnErrorReturn(S) if (((S) &amp; NLS_SEV) != NLS_SUCCESS) return(S)
+</span><span class="c1">// declare the prototype of fSEQRunKernel, contain the information on single line in k-space</span>
+<span class="k">static</span> <span class="n">NLS_STATUS</span> <span class="nf">fSEQRunKernel</span><span class="p">(</span><span class="n">MrProt</span><span class="o">*</span><span class="p">,</span> <span class="n">SeqLin</span><span class="o">*</span><span class="p">,</span> <span class="n">SeqExpo</span><span class="o">*</span><span class="p">,</span> <span class="kt">long</span><span class="p">,</span> <span class="kt">long</span><span class="p">);</span>
+<span class="c1">//fSEQInit: initialize the allowed Sequence Limits 0:42:30</span>
+<span class="n">NLS_STATUS</span> <span class="n">fSEQInit</span><span class="p">()</span>
+<span class="c1">//fSEQPrep: prepare real time elements and calculate energy and timing 0:54:20</span>
+<span class="c1">//          configure RF puse -&gt; set ADC -&gt; set gradient </span>
+<span class="n">NLS_STATUS</span> <span class="n">fSEQPrep</span><span class="p">()</span>
+<span class="c1">//fSEQCheck: check lines at the border of k-space (gradient overflow)</span>
+<span class="n">NLS_STATUS</span> <span class="n">fSEQCheck</span><span class="p">()</span>
+<span class="c1">//fSEQRun run the sequence 1:51:30</span>
+<span class="n">NLS_STATUS</span> <span class="n">fSEQRun</span><span class="p">()</span>
+<span class="c1">//fSEQRunKernel 1:56:40</span>
+<span class="k">static</span> <span class="n">NLS_STATUS</span> <span class="n">fSEQRunKernel</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>所有的时间必须是10ms的倍数，因为机器的clock rate是10ms。</p>
+
+<h2 id="idea-vd13d">IDEA VD13D</h2>]]></content><author><name></name></author><summary type="html"><![CDATA[如何在idea中设置channel 什么是user interface？为什么要用ParameterMap?]]></summary></entry><entry><title type="html">Sparse MRI The Application of Compressed Sensing for Rapid MR Imaging</title><link href="/blog/2021/Sparse-MRI-The-Application-of-Compressed-Sensing-f-6eceb58863554475a2720b4829374b3f/" rel="alternate" type="text/html" title="Sparse MRI The Application of Compressed Sensing for Rapid MR Imaging" /><published>2021-09-25T00:00:00+01:00</published><updated>2021-09-25T00:00:00+01:00</updated><id>/blog/2021/Sparse%20MRI%20The%20Application%20of%20Compressed%20Sensing%20f%206eceb58863554475a2720b4829374b3f</id><content type="html" xml:base="/blog/2021/Sparse-MRI-The-Application-of-Compressed-Sensing-f-6eceb58863554475a2720b4829374b3f/"><![CDATA[]]></content><author><name></name></author><category term="Compress_Sensing" /><category term="MRI" /><category term="Paper" /><category term="Review" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Diffusion MRI From Quantitative Measurement to In-vivo Neuroanatomy</title><link href="/blog/2021/Diffusion-MRI-From-Quantitative-Measurement-to-In-f9516ea2f4a047169066e94ae1966ab1/" rel="alternate" type="text/html" title="Diffusion MRI From Quantitative Measurement to In-vivo Neuroanatomy" /><published>2021-09-25T00:00:00+01:00</published><updated>2021-09-25T00:00:00+01:00</updated><id>/blog/2021/Diffusion%20MRI%20From%20Quantitative%20Measurement%20to%20In-%20f9516ea2f4a047169066e94ae1966ab1</id><content type="html" xml:base="/blog/2021/Diffusion-MRI-From-Quantitative-Measurement-to-In-f9516ea2f4a047169066e94ae1966ab1/"><![CDATA[<hr />
+
+<h2 id="chapter-1-introduction"><strong>Chapter 1, Introduction</strong></h2>
+
+<h3 id="diffusion-原理free-diffusion"><strong>Diffusion 原理，Free Diffusion</strong></h3>
+
+<p>Fick’s first law:</p>
+
+\[J=-D\nabla C\]
+
+<p>J是net particle flux，C是particle concentration，D is diffusion coefficient (defined by <strong>size of diffusion molecules, temperature，  microstructural features of the environment</strong>)</p>
+
+<p>diffusion 来源：仅仅是 collisions between atoms or molecules。不管在平衡态还是非平衡态，微观上都有运动。</p>
+
+\[&lt;x^2&gt;=2D\Delta\]
+
+<p>x 是diffusion distance，时间是$\Delta$。</p>
+
+<p>MR signal attenuation，用来测量MR的relaxation。</p>
+
+\[E(q)=S(q)/S(0), \quad q=\gamma \delta G\]
+
+<p>eliminates the effect of relaxation。</p>
+
+\[E(q)=\int\rho(x_1)\int P(x_1,x_2,\Delta)e^{-iq(x_2-x_1)}dx_1dx_2\]
+
+<p>Diffusion propogator (Green’s function): $P(x_1,x_2,\Delta)$，表示particle 一开始在$x_1$，$\Delta$之后，在$x_2$的概率。</p>
+
+<p>$\rho(x_1)$：代表了在$x_1$处找到一个particle 的概率。</p>
+
+\[lim_{t-&gt;\infin}P(x_1,x_2,t)=\rho(x_1)\]
+
+<p><strong>因为当 $t-&gt;\infin$时，一个particle到空间任何一个位置都有相同的概率，这种情况就跟在$x_1$处有一个particle 一样。</strong></p>
+
+<p>Free Diffusion：$E(q)=e^{-q^2D\Delta}$， 考虑pulse duration后，$E(q)=e^{-q^2D\Delta-\delta/3}=e^{-bD}$，</p>
+
+<p><code class="language-plaintext highlighter-rouge">b-value</code>：其中的$b=q^2(\Delta-\delta/3)$</p>
+
+<p>上述方法可以用来描述<strong>free, anisotropic diffusion in the principal frame of reference</strong></p>
+
+<p>我们不希望预设任何数学模型，只希望获得local propogator来measure microstructural features。但是low resolution和inability to obtain spin density阻碍了local propogator的获得，因此我们ensemble average来简化问题。</p>
+
+\[E(q)=\int\overline{P}(x,\Delta)e^{-iqx}dx\\\overline{P}(x,\Delta)=\int\rho(x_1)P(x_1,x_1+\Delta x,t)dx_1\]
+
+<p>可以看到$E(q)$和$x$之间通过 Fourier Transform联系起来，<code class="language-plaintext highlighter-rouge">q-space imaging,  Diffusion Spectrum Imaging</code>。</p>
+
+<h3 id="diffusion-in-neural-tissue-影响free-diffusion-的因素"><strong>Diffusion in Neural Tissue (影响free diffusion 的因素)</strong></h3>
+
+<hr />
+
+<h2 id="chapter-2-pulse-sequence-for-diffusion-weighted-mri"><strong>Chapter 2, Pulse Sequence for Diffusion-Weighted MRI</strong></h2>
+
+<h3 id="adding-diffusion-weighting-to-pulse-sequence"><strong>Adding Diffusion Weighting to Pulse Sequence</strong></h3>
+
+<p>generalized b-value definition: $b=\int |k_x(t)|^2+|k_y(t)|^2+|k_z(t)|^2 dt$，$k_x(t)=\gamma\int G_x(t)dt$  position on k-space</p>
+
+<p>Two sources of error in DWI: <code class="language-plaintext highlighter-rouge">eddy currents</code>, <code class="language-plaintext highlighter-rouge">gradient nonlinearity</code></p>
+
+<p>eddy currents 原理：gradient coils 会产生magnetic fields ，进而在超导线圈周围的液氦中产生感生电场，也就是eddy current。主要由gradient slewing 产生，梯形gradient的上升支和下降支可以相互抵消。</p>
+
+<h3 id="bulk-motion-sensitivity"><strong>Bulk Motion Sensitivity</strong></h3>
+
+<p>Two sources of bulk motion: <code class="language-plaintext highlighter-rouge">head movement</code>,<code class="language-plaintext highlighter-rouge">cardiac pulsation</code></p>
+
+<p>different shots will lead to different motion, so DWI are generally limited to <code class="language-plaintext highlighter-rouge">single-shot</code>, and the motion remains constant.</p>
+
+<p>一般为了减少采集时间，默认为中心对称的k-space上，我们会进行asymmetric sampling，其中一半可以减少采样数。但是如果由于<code class="language-plaintext highlighter-rouge">head rotation</code>，对称假设不再满足，进而产生<code class="language-plaintext highlighter-rouge">artifact</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">navigator correction</code></p>
+
+<h3 id="single-shot-epi-ss-epi"><strong>Single-shot EPI (SS-EPI)</strong></h3>
+
+<ul>
+  <li>geometric warping from field inhomogeneities</li>
+  <li>geometric warping from gradient-induced eddy currents</li>
+  <li>Intra-voxel dephasing effects on image resolution</li>
+</ul>
+
+<hr />
+
+<h2 id="chapter-3-diffusion-acquisition-pushing-the-boundaries"><strong>Chapter 3, Diffusion Acquisition: Pushing the Boundaries</strong></h2>
+
+<hr />
+
+<h2 id="chapter-4-geometric-distortions-in-diffusion-mri"><strong>Chapter 4, Geometric Distortions in Diffusion MRI</strong></h2>
+
+<p>dMRI 图像相比与structural image 模糊的原因主要由acquisition 序列<strong>EPI造成</strong></p>
+
+<p>EPI对 <strong>off-resonance field</strong> (实际的field 和我们想要的field的差别)比较敏感。</p>
+
+<p>dMRI中的off-resonance field 由 <strong>head</strong> 和 <strong>after effects of switching the gradients</strong> 造成</p>
+
+<h3 id="why-are-epi-distorted">Why are EPI distorted</h3>
+
+<p>EPI distortion 一般沿着<strong>PE</strong>方向。</p>
+
+<p><strong>FE gradien</strong>t: 500~1000Hz/mm</p>
+
+<p><strong>inhomogeneity</strong>: &lt;100Hz</p>
+
+<p>所以在FE direction，误差大概在<strong>0.1~0.2 mm</strong></p>
+
+<p>但是在PE方向上，因为EPI上的PE gradient是“blip”</p>
+
+<div class="row mt-3"><div class="col-sm mt-3 mt-md-0"><img class="img-fluid rounded z-depth-1" src="/assets/img/Diffusion%20MRI%20From%20Quantitative%20Measurement%20to%20In-%20f9516ea2f4a047169066e94ae1966ab1/Untitled.png" data-zoomable="" /></div></div>
+
+<p>所以$T_D$时间内，在一个voxel 的长度$S$上要形成$2\pi/N_{PE}$的phase difference。也就是PE gradient是</p>
+
+<p>$1/N_{PE}T_DS$ Hz/mm。其中$T_D=5\times10^{-4}s$，$S=2mm$，$N_{PE}=96$，PE gradient是<strong>10Hz/mm。</strong>因此在PE direction上，误差大概是<strong>10mm</strong>。</p>
+
+<p>一般PE direction是沿着大脑的左右方向，因为大脑的宽度小于长度。</p>
+
+<h3 id="where-does-the-off-resonance-field-come-from">Where does the off-resonance field come from</h3>
+
+<ol>
+  <li>Susceptibility-Induced Field
+    <ol>
+      <li>Frequency Calibration and Shimming
+        <ul>
+          <li>常数项的场偏移首先会被消除。e.g., 想要3T场强，3T左右的场都会被尝试一遍，直到找到最佳的场强。</li>
+          <li>pre-scan时会采集low-resolution image，然后使用shim coil去抵消一部分off-resonance field，剩下的uncompensated part就是我们指的”off-resonance field”</li>
+        </ul>
+      </li>
+      <li>Subject Movement</li>
+    </ol>
+  </li>
+  <li>
+    <p>Eddy Current-Induced Field</p>
+
+    <p>fields are some <strong>linear combination of linear gradients</strong> in the x-, y-, and z-directions (<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/mrm.1910390518?sid=nlm%3Apubmed">Jezzard et al., 1998</a>)</p>
+
+    <p>expected distortions are <strong>y-zoom, yx- and yz-shear</strong> for data acquired with <strong>PE in the y-direction</strong>, <strong>x-zoom, xy- and xz-shear</strong> for <strong>PE along x</strong>.</p>
+  </li>
+  <li>Concomitant Fields</li>
+</ol>
+
+<h3 id="modified-imaging-techniques-that-yield-less-distorted-images">Modified Imaging Techniques that Yield Less-Distorted Images</h3>
+
+<ol>
+  <li>
+    <p>Parallel Imaging</p>
+  </li>
+  <li>
+    <p>Sequences to Reduce Eddy Currents</p>
+  </li>
+</ol>
+
+<h3 id="imaging-techniques-that-acquire-information-about-the-off-resonance-field">Imaging Techniques that Acquire Information about the Off-Resonance Field</h3>
+
+<ol>
+  <li>
+    <p>Unwarping an Image when the Off-Resonance Field is Known</p>
+
+    <p>如果off-resonance field 和 acquisition parameters 知道，那么就可以从distorted image 重建出corrected image。</p>
+
+    <div class="row mt-3"><div class="col-sm mt-3 mt-md-0"><img class="img-fluid rounded z-depth-1" src="/assets/img/Diffusion%20MRI%20From%20Quantitative%20Measurement%20to%20In-%20f9516ea2f4a047169066e94ae1966ab1/Untitled%201.png" data-zoomable="" /></div></div>
+  </li>
+  <li>
+    <p>Fieldmaps</p>
+  </li>
+  <li>
+    <p>How to Choose $\Delta TE$ for your Fieldmaps</p>
+  </li>
+</ol>
+
+<h3 id="image-registration-based-methods-for-correcting-distortions">Image Registration-Based Methods for Correcting Distortions</h3>
+
+<h3 id="recent-work-at-the-fmrib">Recent Work at the FMRIB</h3>
+
+<hr />
+
+<h2 id="chapter-5-gaussian-modeling-of-the-diffusion-signal"><strong>Chapter 5, Gaussian Modeling of the Diffusion Signal</strong></h2>
+
+<hr />
+
+<h2 id="chapter-6-multiple-fibers-beyond-the-diffusion-tensor"><strong>Chapter 6, Multiple Fibers: Beyond the Diffusion Tensor</strong></h2>]]></content><author><name></name></author><category term="Book" /><category term="MRI" /><category term="dMRI" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">4D Combined Angiography and Perfusion using Radial Imaging and Arterial Spin Labeling</title><link href="/blog/2021/4D-Combined-Angiography-and-Perfusion-using-Radial-8371ec4ffdde4d8d9b67e7b0a662c7bd/" rel="alternate" type="text/html" title="4D Combined Angiography and Perfusion using Radial Imaging and Arterial Spin Labeling" /><published>2021-09-25T00:00:00+01:00</published><updated>2021-09-25T00:00:00+01:00</updated><id>/blog/2021/4D%20Combined%20Angiography%20and%20Perfusion%20using%20Radial%208371ec4ffdde4d8d9b67e7b0a662c7bd</id><content type="html" xml:base="/blog/2021/4D-Combined-Angiography-and-Perfusion-using-Radial-8371ec4ffdde4d8d9b67e7b0a662c7bd/"><![CDATA[<p><strong>Sequence</strong>: 4D implementation of Combined Angiography and Perfusion using <strong>Radial Imaging and Arterial Spin Labeling</strong> (<strong>CAPRIA</strong>)</p>
+
+<p><strong>Reconstruction</strong>: whole-brain <strong>dynamic</strong> <strong>angiogram</strong>, time-resolved <strong>perfusion</strong> map from <strong>same raw data set</strong></p>
+
+<p>angiography: blood flow in large arteries to visualize stenoses, occlusions, abnormal vessels.</p>
+
+<p>perfusion:</p>]]></content><author><name></name></author><category term="ASL" /><category term="MRI" /><category term="Paper" /><summary type="html"><![CDATA[Sequence: 4D implementation of Combined Angiography and Perfusion using Radial Imaging and Arterial Spin Labeling (CAPRIA)]]></summary></entry><entry><title type="html">A joint compressed-sensing and super-resolution approach for very high-resolution diffusion imaging</title><link href="/blog/2021/A-joint-compressed-sensing-and-super-resolution-ap-0cdd70f5425a466e8a3c8ff743aa8a9e/" rel="alternate" type="text/html" title="A joint compressed-sensing and super-resolution approach for very high-resolution diffusion imaging" /><published>2021-09-25T00:00:00+01:00</published><updated>2021-09-25T00:00:00+01:00</updated><id>/blog/2021/A%20joint%20compressed-sensing%20and%20super-resolution%20ap%200cdd70f5425a466e8a3c8ff743aa8a9e</id><content type="html" xml:base="/blog/2021/A-joint-compressed-sensing-and-super-resolution-ap-0cdd70f5425a466e8a3c8ff743aa8a9e/"><![CDATA[]]></content><author><name></name></author><category term="Compress_Sensing" /><category term="Paper" /><category term="dMRI" /><summary type="html"><![CDATA[]]></summary></entry></feed>

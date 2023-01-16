@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+  </script>
+  
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  </script>
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Qijia  Shen
+
+
+  | Physical and numerical phantoms for the validation of brain microstructural MRI A cookbook
+
+</title>
+<meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+">
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+<!-- Code Syntax Highlighting -->
+<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+
+<!-- Styles -->
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="canonical" href="/blog/2021/Physical-and-numerical-phantoms-for-the-validation-7af5e9bdecaf45aea4ab78a8328bdddd/">
+
+<!-- JQuery -->
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+
+<!-- Theming-->
+
+<script src="/assets/js/theme.js"></script>
+<script src="/assets/js/dark_mode.js"></script>
+
+
+
+
+
+
+    
+<!-- MathJax -->
+<script type="text/javascript">
+  // window.MathJax = {
+  //   tex: {
+  //     tags: 'ams'
+  //   }
+  // };
+  window.MathJax = {
+    tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    processEscapes: true
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+
+<script defer type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+  </head>
+
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+    <div class="container">
+      
+      <a class="navbar-brand title font-weight-lighter" href="/">
+       <span class="font-weight-bold">Qijia</span>   Shen
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              about
+              
+            </a>
+          </li>
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/projects/">
+                projects
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/publications/">
+                publications
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          <!-- Blog -->
+          <li class="nav-item active">
+            <a class="nav-link" href="/blog/">
+              blog
+              
+            </a>
+          </li>
+          
+          
+            <div class = "toggle-container">
+              <a id = "light-toggle">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+              </a>
+            </div>
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Physical and numerical phantoms for the validation of brain microstructural MRI A cookbook</h1>
+    <p class="post-meta">September 25, 2021</p>
+  </header>
+
+  <article class="post-content">
+    <h1 id="numerical-phantoms-for-structural-modeling">Numerical Phantoms for Structural Modeling</h1>
+
+<p>Laplace equation, finite difference method, finite element method to solve Bloch-Torrey equation</p>
+
+<h3 id="diffusion">Diffusion</h3>
+
+<p>a potential mistake: $\theta=\pi v, \phi=2\pi u$。应该是$\cos(\theta)=1-2v,\phi=2\pi u$。因为前一种在random sampling的时候，更容易在z方向上</p>
+
+<p>采样完后计算dMRI signal，$\phi=-\gamma\int g(t)r(t)dt, S(g)=&lt;e^{i\phi}&gt;$。</p>
+
+<p>每一个采样都是对propagator的一个采样。由于运算量大，propagator is sampled in finite order cumulant (up to 2nd order/ 4th order)。</p>
+
+<p>dMRI signals are sampled in a finite range of q-space, 用cumulant expansion表示</p>
+
+<p>In monopolar diffusion gradient, the <strong>diffusivity</strong> can be estimated by <strong>the second order cumulants</strong> of the <strong>diffusion displacement.</strong></p>
+
+<p>$D(t,\hat{n})=\frac{&lt;(\Delta r \cdot \hat{n})^2&gt;}{2t}, \Delta r=r(t)-r(0)$  表示沿着$\hat{n}$的diffusion</p>
+
+<p>the <strong>non-Gaussianity of the diffusion propagator</strong> can be evaluated via the (excess) <strong>diffusional kurtosis.</strong></p>
+
+<p>$K(t,\hat{n})=\frac{&lt;(\Delta r \cdot \hat{n})^4&gt;}{&lt;(\Delta r \cdot \hat{n})^2&gt;^2}-3$</p>
+
+<p>diffusion tensor: fitting 3x3 tensor D to D(t,n) → $D(t,\hat{n})=\hat{n}^TD\hat{n}$</p>
+
+<p>diffusion kurtosis tensor:</p>
+
+<div class="row mt-3"><div class="col-sm mt-3 mt-md-0"><img class="img-fluid rounded z-depth-1" src="/assets/img/Physical%20and%20numerical%20phantoms%20for%20the%20validation%207af5e9bdecaf45aea4ab78a8328bdddd/Untitled.png" data-zoomable="" /></div></div>
+
+<p>计算各种不同时间t下的$D_{ij}(t)$，从而计算 ADC with low b-value , based on <a href="https://www.sciencedirect.com/science/article/pii/S1090780711000723">Gaussian phase approximation</a></p>
+
+<p>$ADC=-1/b\cdot ln(S)$</p>
+
+<div class="row mt-3"><div class="col-sm mt-3 mt-md-0"><img class="img-fluid rounded z-depth-1" src="/assets/img/Physical%20and%20numerical%20phantoms%20for%20the%20validation%207af5e9bdecaf45aea4ab78a8328bdddd/Untitled%201.png" data-zoomable="" /></div></div>
+
+<h3 id="susceptibility">Susceptibility</h3>
+
+<p>根据磁化率公式可以计算$\Delta f(r)$，通过累加phase change $d\phi=2\pi \Delta f(r(t))dt$ 沿着particle diffusion trajectory  r(t)，the simulated signal of the echo time TE</p>
+
+<p>$S(TE)=&lt;exp(i\int^{TE}_0 d\phi)&gt;$</p>
+
+<h2 id="how-to-set-up-a-monte-carlo-simulation">How to set up a Monte Carlo Simulation</h2>
+
+<ol>
+  <li>
+    <p>Designing the microstructure geometry</p>
+
+    <p>通过简单的2d/3d形状组合</p>
+
+    <p>restricted diffusion in intra-axonal space, the isolated pores has no influence on results,</p>
+
+    <p>hindered diffusion in extra-axonal space, results depend on packing geometry</p>
+
+    <p>WM axon 的结构一般是randomly packed geometry，但是直接生成随机的结构比较麻烦。collision-driven packing generation。</p>
+
+    <p>size of phantom geometry » diffusion length</p>
+  </li>
+  <li>
+    <p>Particle number</p>
+
+    <p>$error \propto 1/\sqrt{粒子数}$</p>
+
+    <p>一般来说需要粒子束 $&gt;10^5$。</p>
+  </li>
+  <li>
+    <p>Step size</p>
+
+    <p>一般来说小于1/10的cylinder radius</p>
+
+    <p>step time $\delta t&lt;\delta$ (gradient pulse width)</p>
+
+    <p>no standard, only sanity check</p>
+  </li>
+  <li>
+    <p>Step number</p>
+
+    <p>simulation一开始几千个step 产生的结果可能不准确，因为离散化造成的误差。通过检验diffusion kurtosis来指导step number。$K(t) \propto 1/N_{step}$</p>
+  </li>
+  <li>Boundary condition (substrate edge)
+    <ol>
+      <li>mirroring</li>
+      <li>periodic boundary condition: 如果两侧边界microstructure 不连续，就可能有问题。</li>
+    </ol>
+  </li>
+  <li>Impermeable, permeable and absorbing membranes
+    <ol>
+      <li>impermeable: 当作完全弹性碰撞</li>
+      <li>permeable: 有一个$P_{EX}$的概率穿过membrane，有一个$1-P_{EX}$的概率reflection</li>
+    </ol>
+
+    <p>从compartment 1 → compartment 2，particle 行进$\nu \cdot \delta x_1$，再同方向前进$(1-\nu)\delta \cdot x_2$，这一个step 产生的总共T2 weighting signal 是$e^{-\nu \cdot \delta t/T_2^{1}}e^{-(1-\nu) \cdot \delta t/T_2^{2}}$</p>
+  </li>
+  <li>Particle-membrane interaction: elastic collision (specular reflection), diffuse reflection, and equal-step-length random leap
+    <ol>
+      <li>elastic collision，反射后方向与入射方向相同</li>
+      <li>diffuse reflect，反射后方向随机，反射前后总的step length 不变</li>
+      <li>equal step random leap，不常用</li>
+    </ol>
+  </li>
+  <li>
+    <p>Relieving the computational bottleneck</p>
+
+    <p>lookup table</p>
+  </li>
+</ol>
+
+<h2 id="how-to-proof-check-your-monte-carlo-simulation-framework">How to Proof check your Monte Carlo Simulation Framework</h2>
+
+<ol>
+  <li>Free diffusion</li>
+  <li>
+    <p>Diffusion time dependence in short-time limit (S/V limit)</p>
+
+    <p>simulation results中的D，K必须满足这两个条件</p>
+
+    <div class="row mt-3"><div class="col-sm mt-3 mt-md-0"><img class="img-fluid rounded z-depth-1" src="/assets/img/Physical%20and%20numerical%20phantoms%20for%20the%20validation%207af5e9bdecaf45aea4ab78a8328bdddd/Untitled%202.png" data-zoomable="" /></div></div>
+  </li>
+  <li>
+    <p>Analytical solutions for time-dependent diffusion</p>
+
+    <p>在最简单的有解析解的形状上试验</p>
+
+    <p>（parallel planes, cylinders and spheres with imper- meable (non-)absorbing membranes）</p>
+  </li>
+  <li>
+    <p>Particle density balance for the water exchange</p>
+
+    <p>average particle densities in each compartment remaining the same</p>
+  </li>
+</ol>
+
+<h2 id="examples">Examples</h2>
+
+<h1 id="physical-phantoms-to-validate-brain-microstructure">Physical Phantoms to Validate Brain Microstructure</h1>
+
+<div class="row mt-3"><div class="col-sm mt-3 mt-md-0"><img class="img-fluid rounded z-depth-1" src="/assets/img/Physical%20and%20numerical%20phantoms%20for%20the%20validation%207af5e9bdecaf45aea4ab78a8328bdddd/sim.png" data-zoomable="" /></div></div>
+
+<p>Fig.4 Simulation 2, How the code was implemented!</p>
+
+  </article>
+
+  
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <!-- 
+<footer class="fixed-bottom">
+  <div class="container mt-0">
+    &copy; Copyright 2023 Qijia  Shen.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
+
+    
+    
+  </div>
+</footer>
+
+ -->
+
+  </body>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+
+</html>
