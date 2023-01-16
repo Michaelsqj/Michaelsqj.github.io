@@ -10,6 +10,8 @@ enddate: 2021-06-15
 supervisor: Hongjiang Wei
 ---
 
+[Github Repo](https://github.com/Michaelsqj/STI)
+
 `Purpose:`
 
 Susceptibility tensor imaging has attracted increasing amounts of attention for its potential of achieving ultra high resolution. Comparing to the diffusion tensor imaging, which has reached a stage where we have to choose between high resolution and short scanning time, susceptibility tensor imaging can easily achieve submillimeter resolution and allow researchers to probe more sophisticated in-vivo microstructures. Nevertheless, there are a few obstacles of in susceptibility tensor imaging that urges to overcome before this technique can be applied to clinical study. 
@@ -33,7 +35,7 @@ The experiments were designed to demonstrate the advantage of our methods.
 
 After the validations of the above two phantoms, we applied our methods to the in-vivo data with 17 different orientations. We applied our methods to jointly estimate the susceptibility tensor and constant offset. The binary mask from the segmentation of the corresponding magnitude image was used to impose the isotropic constraint on cerebral spinal fluid region. A diffusion tensor image was generated and registered to our susceptibility map using FSL for comparison.
 
-\textbf{Results:}
+`Results:`
 
 In the part of numerical simulation, we verified the accuracy of our methods using two different phantoms. Comparing the results in the simplest phantom, artifacts can be observed in isotropic regions in magnetic susceptibility anisotropy images calculated by the conventional methods. In addition, large amounts of noise existed in the final result. Our methods, however, produced the perfect result with high SNR and consistency with the phantom. In the more realistic model based on diffusion tensor imaging, our method performed constantly superior to the conventional one.
 

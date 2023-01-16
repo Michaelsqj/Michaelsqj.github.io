@@ -4,7 +4,7 @@ title: projects
 permalink: /projects/
 description: A growing collection of cool projects.
 nav: true
-display_categories: [medical image analysis, MRI reconstruction, MRI acquisition]
+display_categories: [medical image analysis, MRI reconstruction, MRI acquisition, Generative 3D-aware image synthesis]
 horizontal: false
 ---
 <div class="projects">
