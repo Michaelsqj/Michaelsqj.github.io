@@ -34,8 +34,9 @@ About, Research, Writing, Reading, Slides, and CV.
 
 - Publish factual content only. Do not add demo, sample, prototype, placeholder,
   fabricated, or speculative material.
-- Do not publish unfinished article bodies. Works in progress may appear only
-  as honest, non-clickable titles on `writing.html`.
+- Do not publish unfinished article bodies. A work in progress may link to a
+  clearly labeled status page at its future stable URL, but that page must not
+  contain invented or placeholder article content.
 - Do not publish empty topic or slide cards.
 - Never label MRI or medical-imaging work as ongoing.
 - Keep research summaries to one sentence, ideally 20–35 words.

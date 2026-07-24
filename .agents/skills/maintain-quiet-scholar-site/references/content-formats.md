@@ -22,6 +22,15 @@ Start Markdown content at `##`; the layout supplies the page title.
 Recommended structure: question, motivation, core idea, code/math/empirical
 example, limitations, references.
 
+## Writing status page
+
+An announced essay may use `writing/<slug>.html` with a stable permalink before
+the finished post exists. Label it `Work in progress`, state its factual scope,
+and say that the completed article will appear there. Do not add an outline,
+sample prose, citations, or other material that could be mistaken for a
+finished article. Link its card on `writing.html` and the homepage directly to
+that stable URL.
+
 ## Reading topic
 
 Use `_reading/topic-slug.md`.
