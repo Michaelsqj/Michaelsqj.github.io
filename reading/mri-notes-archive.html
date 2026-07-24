@@ -1,0 +1,38 @@
+---
+layout: default
+title: MRI Notes Archive
+description: Historical reading and working notes on MRI acquisition, reconstruction, diffusion imaging, and foundations.
+section: reading
+rail_note: "Archive<br>MRI notes · 2021"
+permalink: /reading/mri-notes-archive/
+---
+<header class="page-header compact-header">
+  <p class="eyebrow">Historical reading · 31 notes</p>
+  <h1>MRI Notes Archive</h1>
+  <p class="page-lead">
+    Working notes from my earlier study of MRI acquisition, reconstruction,
+    diffusion imaging, and mathematical foundations, grouped by subject.
+  </p>
+  <a class="text-link" href="{{ '/reading/' | relative_url }}">← Back to reading topics</a>
+</header>
+
+<section class="archive-groups" aria-label="Archived MRI notes">
+  {% for group in site.data.mri_archive %}
+  <details class="archive-group"{% if forloop.first %} open{% endif %}>
+    <summary><span>{{ group.name }}</span><span>{{ group.items.size }} notes</span></summary>
+    <ol class="archive-list">
+      {% for title in group.items %}
+      {% assign matches = site.posts | where: "title", title %}
+      {% assign post = matches | first %}
+      <li>
+        {% if post %}<a href="{{ post.url | relative_url }}">{{ title }}</a>{% else %}<span>{{ title }}</span>{% endif %}
+        <small>Historical note</small>
+      </li>
+      {% endfor %}
+    </ol>
+  </details>
+  {% endfor %}
+</section>
+
+<p class="archive-note">Original publication dates and individual note URLs are preserved.</p>
+<footer><span>Historical MRI notes · 2021</span><a href="{{ '/reading/' | relative_url }}">Reading topics →</a></footer>

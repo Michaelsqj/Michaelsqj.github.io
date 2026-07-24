@@ -1,0 +1,40 @@
+---
+layout: default
+title: Research
+description: Research by Qijia Shen, grouped by direction.
+section: research
+rail_note: "Research<br>Grouped by direction"
+permalink: /research/
+---
+<header class="page-header">
+  <p class="eyebrow">Research directions</p>
+  <h1>Research</h1>
+  <p class="page-lead">A concise archive grouped by the scientific direction each project contributes to.</p>
+</header>
+
+<nav class="category-nav" aria-label="Research directions">
+  <a href="#agentic-ai">Agentic AI</a>
+  <a href="#generative-3d-vision">Generative 3D &amp; Vision</a>
+  <a href="#medical-imaging-neuroscience">Medical Imaging &amp; Neuroscience</a>
+</nav>
+
+{% assign directions = "Agentic AI|Generative 3D & Vision|Medical Imaging & Neuroscience" | split: "|" %}
+{% for direction in directions %}
+{% assign items = site.data.research | where: "direction", direction | sort: "order" %}
+<section class="section direction" id="{{ direction | slugify }}">
+  <div class="direction-head">
+    <p class="section-kicker">0{{ forloop.index }} / {% if forloop.first %}Current{% else %}Previous{% endif %} direction</p>
+    <h2>{{ direction }}</h2>
+    {% case direction %}
+    {% when "Agentic AI" %}<p>Post-training, agent environments, tool use, and infrastructure for capable LLM agents.</p>
+    {% when "Generative 3D & Vision" %}<p>Structured generation and spatial reasoning from large, uncurated image collections.</p>
+    {% else %}<p>Acquisition, reconstruction, representation learning, and image analysis across MRI, connectomics, and pathology.</p>
+    {% endcase %}
+  </div>
+  <div class="research-list">
+    {% for item in items %}{% include research-entry.html item=item %}{% endfor %}
+  </div>
+</section>
+{% endfor %}
+
+<footer><span>© {{ site.time | date: "%Y" }} Qijia Shen</span><a href="{{ '/writing/' | relative_url }}">Next: Writing →</a></footer>

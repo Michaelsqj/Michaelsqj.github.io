@@ -1,0 +1,16 @@
+<aside class="rail" aria-label="Primary">
+  <a class="monogram" href="{{ '/' | relative_url }}" aria-label="Qijia Shen home">QS</a>
+  <nav>
+    <a href="{{ '/' | relative_url }}"{% if page.section == 'about' %} aria-current="page"{% endif %}>About</a>
+    <a href="{{ '/research/' | relative_url }}"{% if page.section == 'research' %} aria-current="page"{% endif %}>Research</a>
+    <a href="{{ '/writing/' | relative_url }}"{% if page.section == 'writing' %} aria-current="page"{% endif %}>Writing</a>
+    <a href="{{ '/reading/' | relative_url }}"{% if page.section == 'reading' %} aria-current="page"{% endif %}>Reading</a>
+    <a href="{{ '/slides/' | relative_url }}"{% if page.section == 'slides' %} aria-current="page"{% endif %}>Slides</a>
+    <a href="{{ '/cv/' | relative_url }}"{% if page.section == 'cv' %} aria-current="page"{% endif %}>CV</a>
+  </nav>
+  {% if page.section == 'about' %}
+  <p class="rail-bottom">Agentic AI · Post-training<br>CAMEL-AI · Eigent-AI</p>
+  {% elsif page.rail_note %}
+  <p class="rail-bottom">{{ page.rail_note }}</p>
+  {% endif %}
+</aside>

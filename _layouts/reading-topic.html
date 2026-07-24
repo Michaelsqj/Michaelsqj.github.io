@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<header class="page-header compact-header">
+  <p class="eyebrow">Reading notes{% if page.domain %} · {{ page.domain }}{% endif %}</p>
+  <h1>{{ page.title }}</h1>
+  {% if page.description %}<p class="page-lead">{{ page.description }}</p>{% endif %}
+  <a class="text-link" href="{{ '/reading/' | relative_url }}">All topics →</a>
+</header>
+<article class="article topic-article">
+  {{ content }}
+</article>
+<footer><span>Living topic collection</span><a href="{{ '/reading/' | relative_url }}">← All reading topics</a></footer>

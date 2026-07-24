@@ -1,0 +1,79 @@
+- direction: Agentic AI
+  title: "SETA: Scaling Environments for Terminal Agents"
+  period: "2025–present"
+  tags: "Agent environments · Reinforcement learning"
+  summary: "A framework for synthesizing and evolving grounded, executable terminal environments with reliable verification and adaptive difficulty."
+  paper: "https://arxiv.org/html/2607.10891v1"
+  code: "https://github.com/camel-ai/seta"
+  featured: true
+  order: 1
+
+- direction: Generative 3D & Vision
+  title: "Geometry-aware 3D generation from in-the-wild images"
+  period: "2022–2024"
+  tags: "Generative vision"
+  summary: "View-aware training and pre-trained vision discriminators for learning 3D structure from ImageNet-scale 2D data."
+  paper: "https://arxiv.org/abs/2402.00225"
+  code: "https://github.com/Michaelsqj/eg3d"
+  featured: true
+  order: 2
+
+- direction: Medical Imaging & Neuroscience
+  title: "Ultra-high temporal resolution dynamic angiography"
+  period: "2024"
+  tags: "Dynamic MRI"
+  summary: "Subspace reconstruction for arterial spin labelling angiography at 14.7 ms temporal resolution."
+  paper: "https://doi.org/10.1002/mrm.30407"
+  code: "https://github.com/Michaelsqj/dynamic_angio"
+  featured: true
+  order: 3
+
+- direction: Medical Imaging & Neuroscience
+  title: "Efficient 3D cone trajectory design"
+  period: "2024"
+  tags: "MRI acquisition"
+  summary: "A two-stage k-space trajectory for combined high-resolution angiographic and perfusion imaging."
+  paper: "https://doi.org/10.1002/mrm.30149"
+  code: "https://github.com/Michaelsqj/TrajectoryDesign"
+  order: 4
+
+- direction: Medical Imaging & Neuroscience
+  title: "Motion correction with subspace self-navigation"
+  period: "2025"
+  tags: "MRI reconstruction"
+  summary: "Joint navigator and image reconstruction to reduce motion artefacts in combined angiography and perfusion imaging."
+  preprint: "https://doi.org/10.1101/2024.08.26.609650"
+  order: 5
+
+- direction: Medical Imaging & Neuroscience
+  title: "Multi-modal representation learning with UK Biobank"
+  period: "2024–2025"
+  tags: "Neuroimaging"
+  summary: "Data-driven MRI features for predicting neurocognitive and health phenotypes from large-scale multimodal data."
+  order: 6
+
+- direction: Medical Imaging & Neuroscience
+  title: "Large-scale 3D mitochondria segmentation"
+  period: "2020–2021"
+  tags: "Connectomics"
+  summary: "3D instance segmentation using flux, distance transforms, and consistency regularization on MitoEM."
+  paper: "https://doi.org/10.1109/TMI.2023.3320497"
+  code: "https://github.com/Michaelsqj/pytorch_connectomics"
+  order: 7
+
+- direction: Medical Imaging & Neuroscience
+  title: "Hierarchical pathology screening for cervical abnormality"
+  period: "2020–2021"
+  tags: "Computational pathology"
+  summary: "A three-stage framework for robust whole-slide cervical abnormality screening and suspicious-cell localization."
+  paper: "https://doi.org/10.1016/j.compmedimag.2021.101892"
+  related_code: "https://github.com/Michaelsqj/Cell-Instance-Segmentation"
+  order: 8
+
+- direction: Medical Imaging & Neuroscience
+  title: "Real-time endoscopic cancer detection"
+  period: "2019–2020"
+  tags: "Clinical computer vision"
+  summary: "A fast and interpretable detection system for carcinoma pharyngeal screening in endoscopy video."
+  code: "https://github.com/Michaelsqj/Nasopharyngeal_carcinoma"
+  order: 9

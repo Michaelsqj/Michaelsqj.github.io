@@ -1,14 +1,7 @@
-source "https://gems.ruby-china.com/"
-group :jekyll_plugins do
-    gem 'jekyll'
-    gem 'jekyll-email-protect'
-    gem 'jekyll-feed'
-    gem 'jekyll-github-metadata'
-    gem 'jekyll-paginate-v2'
-    gem 'jekyll-scholar'
-    gem 'jekyll-twitter-plugin'
-    gem 'jekyll-sitemap'
-    gem 'jemoji'
-    gem 'unicode_utils'
-    gem 'webrick'
-end
+source "https://rubygems.org"
+
+gem "jekyll", "~> 4.2.2"
+gem "jekyll-feed", "~> 0.17"
+gem "jekyll-scholar", "~> 7.1"
+gem "jekyll-sitemap", "~> 1.4"
+gem "webrick", "~> 1.8"

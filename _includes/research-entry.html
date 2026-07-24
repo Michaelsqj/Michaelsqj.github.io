@@ -1,0 +1,15 @@
+<article class="research-entry">
+  <div>
+    <p class="meta">{{ include.item.period }} · {{ include.item.tags }}</p>
+    <h3>{{ include.item.title }}</h3>
+    <p>{{ include.item.summary }}</p>
+  </div>
+  {% if include.item.paper or include.item.preprint or include.item.code or include.item.related_code %}
+  <div class="entry-links">
+    {% if include.item.paper %}<a href="{{ include.item.paper }}" target="_blank" rel="noreferrer">Paper ↗</a>{% endif %}
+    {% if include.item.preprint %}<a href="{{ include.item.preprint }}" target="_blank" rel="noreferrer">Preprint ↗</a>{% endif %}
+    {% if include.item.code %}<a href="{{ include.item.code }}" target="_blank" rel="noreferrer">Code ↗</a>{% endif %}
+    {% if include.item.related_code %}<a href="{{ include.item.related_code }}" target="_blank" rel="noreferrer">Related code ↗</a>{% endif %}
+  </div>
+  {% endif %}
+</article>

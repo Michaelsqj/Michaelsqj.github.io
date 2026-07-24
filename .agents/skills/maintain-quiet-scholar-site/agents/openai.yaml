@@ -1,0 +1,4 @@
+interface:
+  display_name: "Maintain Quiet Scholar Site"
+  short_description: "Maintain Qijia Shen’s academic website"
+  default_prompt: "Use $maintain-quiet-scholar-site to update and validate this personal academic website."

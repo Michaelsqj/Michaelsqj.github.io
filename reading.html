@@ -1,0 +1,35 @@
+---
+layout: default
+title: Reading
+description: Living, topic-level collections of papers, summaries, and research questions.
+section: reading
+rail_note: "Reading notes<br>Grouped by topic"
+permalink: /reading/
+---
+<header class="page-header">
+  <p class="eyebrow">Reading notes</p>
+  <h1>Topics</h1>
+  <p class="page-lead">Living, topic-level collections of papers, concise summaries, and research questions.</p>
+</header>
+
+<section class="section">
+  <div class="topic-grid">
+    {% assign topics = site.reading | where_exp: "topic", "topic.published != false" | sort: "order" %}
+    {% for topic in topics %}
+    <a class="topic-card" href="{{ topic.url | relative_url }}">
+      <p class="meta">{{ topic.meta }}</p>
+      <h2>{{ topic.title }}</h2>
+      <p>{{ topic.description }}</p>
+      <span class="text-link">Open collection →</span>
+    </a>
+    {% endfor %}
+    <a class="topic-card" href="{{ '/reading/mri-notes-archive/' | relative_url }}">
+      <p class="meta">Archive · 31 notes · 2021</p>
+      <h2>MRI Notes Archive</h2>
+      <p>Earlier reading and working notes on ASL, reconstruction, sampling, diffusion MRI, and imaging foundations.</p>
+      <span class="text-link">Open archive →</span>
+    </a>
+  </div>
+</section>
+
+<footer><span>Living topic collections</span><a href="{{ '/writing/' | relative_url }}">Writing →</a></footer>

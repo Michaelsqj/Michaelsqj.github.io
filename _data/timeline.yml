@@ -1,0 +1,19 @@
+- type: experience
+  period: "Present"
+  title: "Member of Technical Staff · CAMEL-AI / Eigent-AI"
+  summary: "Post-training, agentic AI, agent environments, agent infrastructure, and systems for capable LLM agents."
+
+- type: experience
+  period: "2020–2021"
+  title: "Visiting Researcher · Harvard SEAS"
+  summary: "Large-scale 3D connectomics and mitochondria instance segmentation."
+
+- type: education
+  period: "2021–2025"
+  title: "DPhil in Neurosciences · University of Oxford"
+  summary: "Advanced medical image reconstruction, motion correction, and dynamic angiography."
+
+- type: education
+  period: "2017–2021"
+  title: "B.E. Biomedical Engineering · Shanghai Jiao Tong University"
+  summary: "Medical image analysis, computational pathology, and clinical computer vision."

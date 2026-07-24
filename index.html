@@ -1,0 +1,92 @@
+---
+layout: default
+title:
+description: Qijia Shen — research in agentic AI, reinforcement learning, training infrastructure, and computational imaging.
+section: about
+---
+<header class="masthead">
+  <div>
+    <p class="eyebrow">Qijia Shen · Research profile</p>
+    <h1>Qijia<br>Shen</h1>
+    <p class="role">Member of Technical Staff · Agentic AI &amp; Post-training</p>
+    <p class="intro">
+      I work at CAMEL-AI and Eigent-AI on post-training, agent environments,
+      agent infrastructure, and capable LLM agents. My earlier research spans
+      geometry-aware 3D generation, medical imaging, and neuroscience.
+    </p>
+    <div class="actions">
+      <a class="button" href="{{ '/cv/' | relative_url }}">View curriculum vitae</a>
+      <a class="text-link" href="{{ '/research/' | relative_url }}">Selected research →</a>
+    </div>
+    <nav class="social-links" aria-label="Social and contact links">
+      {% for link in site.data.profile.social %}
+      <a href="{{ link.url }}"{% unless link.url contains "mailto:" %} target="_blank" rel="noreferrer"{% endunless %}>{{ link.label }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+  <div class="portrait-wrap">
+    <img class="portrait" src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Portrait of Qijia Shen">
+  </div>
+</header>
+
+<div class="focus" aria-label="Research focus">
+  <span class="focus-label">Current focus</span>
+  <span class="tag">Agentic RL</span>
+  <span class="tag">Agent Environments</span>
+  <span class="tag">Agent Infrastructure</span>
+  <span class="tag">LLM Post-training</span>
+</div>
+
+<div class="content-grid">
+  <section aria-labelledby="research-title">
+    <div class="section-head">
+      <div>
+        <p class="section-kicker">01 / Selected work</p>
+        <h2 id="research-title">Selected research</h2>
+      </div>
+      <a href="{{ '/research/' | relative_url }}">View archive →</a>
+    </div>
+    <div class="work-list">
+      {% assign featured = site.data.research | where: "featured", true | sort: "order" %}
+      {% for item in featured %}
+      <a class="work-item" href="{{ '/research/' | relative_url }}#{{ item.direction | slugify }}">
+        <span class="index">0{{ forloop.index }}</span>
+        <span><h3>{{ item.title }}</h3><p>{{ item.tags }}</p></span>
+        <span class="year">{{ item.period | split: "–" | last }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <aside class="side-stack">
+    <section aria-labelledby="writing-title">
+      <p class="section-kicker">02 / Writing</p>
+      <a class="note-card" href="{{ '/writing/' | relative_url }}">
+        <p class="meta">Current work</p>
+        <h3 id="writing-title">Lessons from Training Terminal Agents with Reinforcement Learning</h3>
+        <p>An essay in progress on rollouts, rewards, verifiers, infrastructure, and failure modes.</p>
+      </a>
+    </section>
+    <a class="atlas" href="{{ '/reading/' | relative_url }}">
+      <small>03 / Reading</small>
+      <h3>Reading Notes</h3>
+      <p>Living, topic-indexed collections on agent environments, reinforcement learning, and MRI.</p>
+      <span class="text-link">Explore topics →</span>
+    </a>
+  </aside>
+</div>
+
+<section class="section" aria-labelledby="timeline-title">
+  <p class="section-kicker">04 / Background</p>
+  <h2 id="timeline-title">Experience &amp; education</h2>
+  <div class="timeline">
+    {% for item in site.data.timeline %}
+    <article class="timeline-item">
+      <p class="timeline-date">{{ item.period }}</p>
+      <div><h3>{{ item.title }}</h3><p>{{ item.summary }}</p></div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<footer><span>© {{ site.time | date: "%Y" }} Qijia Shen</span></footer>

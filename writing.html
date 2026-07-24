@@ -1,0 +1,46 @@
+---
+layout: default
+title: Writing
+description: Essays on agent systems, reinforcement learning, and training infrastructure.
+section: writing
+rail_note: "Writing<br>Essays"
+permalink: /writing/
+---
+<header class="page-header">
+  <p class="eyebrow">Essays</p>
+  <h1>Writing</h1>
+  <p class="page-lead">Long-form writing on agent systems, reinforcement learning, training infrastructure, and practical research lessons.</p>
+</header>
+
+{% assign published_writing = site.posts | where: "public_writing", true %}
+{% if published_writing.size > 0 %}
+<section class="section">
+  <div class="work-list">
+    {% for post in published_writing %}
+    <a class="work-item" href="{{ post.url | relative_url }}">
+      <span class="index">0{{ forloop.index }}</span>
+      <span><h3>{{ post.title }}</h3><p>{{ post.description }}</p></span>
+      <span class="year">{{ post.date | date: "%Y" }}</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<section class="section">
+  <p class="section-kicker">Work in progress</p>
+  <div class="work-list">
+    <article class="work-item">
+      <span class="index">01</span>
+      <span><h3>Lessons from Training Terminal Agents with Reinforcement Learning</h3><p>Rollouts · rewards · verifiers · infrastructure · failure modes</p></span>
+      <span class="year">In progress</span>
+    </article>
+    <article class="work-item">
+      <span class="index">02</span>
+      <span><h3>Building Mini-Miles: Learning Miles Through a Minimal Implementation</h3><p>Companion project · minimal RL loop · rollouts · updates · synchronization</p></span>
+      <span class="year">In progress</span>
+    </article>
+  </div>
+</section>
+
+<footer><span>© {{ site.time | date: "%Y" }} Qijia Shen</span><a href="{{ '/reading/' | relative_url }}">Next: Reading →</a></footer>

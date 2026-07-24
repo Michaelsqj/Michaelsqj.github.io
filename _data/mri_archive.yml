@@ -1,0 +1,42 @@
+- name: "ASL, angiography & trajectories"
+  items:
+    - "4D Combined Angiography and Perfusion using Radial Imaging and Arterial Spin Labeling"
+    - "Advances in arterial spin labelling MRI methods for measuring perfusion and collateral flow"
+    - "Arterial spin labeling for the measurement of cerebral perfusion and angiography"
+    - "Combined angiography and perfusion using radial imaging and arterial spin labeling"
+    - "Design and Analysis of a Practical 3D Cones Trajectory"
+    - "Free-Breathing Pediatric Chest MRI Performance of Self-Navigated Golden- Angle Ordered Conical Ultrashort Echo Time Acquisition"
+    - "Hybrid Radial-Cones Trajectory for Accelerated MRI"
+    - "Improved Golden Ratio Radial Arterial Spin Labeling Angiography Reconstruction using k-t Sparsity Constraints"
+
+- name: "Reconstruction, sampling & parallel imaging"
+  items:
+    - "An Introduction to Compressive Sensing"
+    - "Compressed Sensing MRI"
+    - "Deep MRI Reconstruction Unrolled Optimization Algorithms Meet Neural Networks"
+    - "Deep-Learning Methods for Parallel Magnetic Resonance Image Reconstruction"
+    - "Nonuniform Fast Fourier Transforms Using Min-Max Interpolation"
+    - "Recent advances in parallel imaging for MRI"
+    - "Reconstruction of Non-Cartesian Data"
+    - "Sampling Density Compensation in MRI Rationale and an Iterative Numerical Solution"
+    - "Sparse MRI The Application of Compressed Sensing for Rapid MR Imaging"
+    - "Wave-CAIPI for Highly Accelerated 3D Imaging"
+
+- name: "Diffusion MRI & microstructure"
+  items:
+    - "A joint compressed-sensing and super-resolution approach for very high-resolution diffusion imaging"
+    - "An integrated approach to correction for off-resonance effects and subject movement in diffusion MR imaging"
+    - "Diffusion MRI From Quantitative Measurement to In-vivo Neuroanatomy"
+    - "Model-Based Deep Learning for Reconstruction of Joint k-q Under-sampled High Resolution Diffusion MRI"
+    - "Monte Carlo study of a two-compartment exchange model of diffusion"
+    - "Non-parametric representation and prediction of single- and multi-shell diffusion-weighted MRI data using Gaussian processes"
+    - "Physical and numerical phantoms for the validation of brain microstructural MRI A cookbook"
+    - "Quantifying brain microstructure with diffusion MRI Theory and parameter estimation"
+    - "Random walks with barriers"
+    - "Realistic simulation of artefacts in diffusion MRI for validating post-processing correction techniques"
+
+- name: "Foundations & course notes"
+  items:
+    - "Pattern Recognition and Machine Learning"
+    - "RAD229-MR signals and sequences"
+    - "问题："
